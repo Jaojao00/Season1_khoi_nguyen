@@ -507,24 +507,24 @@
                             <span>Thỏa thuận người dùng cuối (EULA)</span>
                             <i class="fa-solid fa-circle-info text-cyan-400 text-xs" title="Quy định sử dụng tài nguyên"></i>
                         </div>
-                        <div class="p-3 rounded-lg bg-black/50 border border-white/10 text-[11px] text-gray-400 leading-relaxed">
-                            Thỏa thuận cấp phép tiêu chuẩn mã nguồn mở (Standard Open-Source EULA). Sử dụng tự do trong bất kỳ dự án nào bạn sở hữu, kèm theo ghi nguồn tác giả <strong>Tài Nguyễn (TN)</strong>.
+                        <div id="eula-description" class="p-3 rounded-lg bg-black/50 border border-white/10 text-[11px] text-gray-400 leading-relaxed">
+                            Thỏa thuận cấp phép bản quyền thương mại độc quyền (Commercial Private License). Phát triển bởi <strong>Team JAO MC &amp; Tài Dev Nguyễn</strong>. <strong>Không phải mã nguồn mở</strong>. Mọi hành vi sao chép, phân phối hoặc dịch ngược lại khi chưa có sự đồng ý đều bị nghiêm cấm theo quy định bản quyền.
                         </div>
                     </div>
 
                     <!-- Gói Hỗ trợ -->
                     <div>
                         <h4 class="text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Hỗ trợ đi kèm</h4>
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-cyan-500/20 space-y-2 text-xs">
-                            <div class="text-cyan-300 font-semibold mb-1">Gói Tiêu Chuẩn</div>
-                            <div class="text-gray-300 space-y-1.5">
+                        <div id="support-pack-box" class="p-3.5 rounded-xl bg-black/40 border border-cyan-500/20 space-y-2 text-xs">
+                            <div id="support-pack-title" class="text-cyan-300 font-semibold mb-1">Gói Tiêu Chuẩn</div>
+                            <div id="support-pack-list" class="text-gray-300 space-y-1.5">
                                 <div class="flex items-center space-x-2">
                                     <i class="fa-solid fa-check text-cyan-400 text-xs"></i>
                                     <span>Tải xuống tài nguyên (.jar)</span>
                                 </div>
                                 <div class="flex items-center space-x-2">
                                     <i class="fa-solid fa-check text-cyan-400 text-xs"></i>
-                                    <span>Truy cập toàn bộ mã nguồn & bản cập nhật mới</span>
+                                    <span>Truy cập toàn bộ tài liệu &amp; bản cập nhật mới</span>
                                 </div>
                                 <div class="flex items-center space-x-2">
                                     <i class="fa-solid fa-check text-cyan-400 text-xs"></i>
@@ -884,30 +884,48 @@
                 </a>
             `;
         } else if (pluginId === 'tutien') {
-            document.getElementById('page-title').innerText = "TN-TuTienPlugin — Hệ Thống Tu Tiên Minecraft (v2.3 Skyblock & Survival Edition) | Team Jao MC";
-            document.getElementById('breadcrumb-plugin').innerText = "TN-TuTienPlugin v2.3 Skyblock & Survival";
-            document.getElementById('plugin-title').innerHTML = `TN-TuTienPlugin — Hệ Thống Tu Tiên Chuyên Sâu <span class="text-amber-400 text-xl font-mono">v2.3 Skyblock & Survival Edition</span>`;
-            document.getElementById('plugin-tagline').innerText = "Plugin Minecraft RPG mô phỏng thế giới tu tiên chuyên sâu, cân bằng hoàn hảo cho máy chủ Skyblock và Survival: Chuẩn 17 Đại Cảnh Giới Tiên Nghịch, Tịch Cốc Đạo Thể, Tọa Thiền Tụ Linh Trận Bát Quái, Ngự Không Đạp Mây, 7 Đại Đạo, 50+ Đan Dược, Lò Rèn 8 Phẩm Cấp & PlaceholderAPI Chuẩn TAB.";
+            document.getElementById('page-title').innerText = "TN-TuTienPlugin — Hệ Thống Tu Tiên Toàn Diện v2.3.0 | Tứ Đại Kỳ Thư & Đấu Phá Luyện Đan | Team Jao MC";
+            document.getElementById('breadcrumb-plugin').innerText = "TN-TuTienPlugin v2.3.0 Skyblock Edition";
+            document.getElementById('plugin-title').innerHTML = `TN-TuTienPlugin — Hệ Thống Tu Tiên Toàn Diện <span class="text-amber-400 text-xl font-mono">v2.3.0 Skyblock Edition</span>`;
+            document.getElementById('plugin-tagline').innerText = "Hệ thống RPG Tu Tiên chuyên sâu: 17 Cảnh Giới Tiên Nghịch, 22 Bộ Công Pháp Tứ Đại Kỳ Thư, Đấu Phá Luyện Đan (Dược Đỉnh, Dị Hỏa, Đan Lôi), Đan Độc 0-1000, Tàng Kinh Các, Zero-Loss Crash-Proof Architecture tích hợp sâu MythicMobs v5 & SuperiorSkyblock2.";
             document.getElementById('plugin-banner').src = "tutienlogo.jpg";
             
             // Cập nhật Metadata Box
-            if (document.getElementById('meta-author')) document.getElementById('meta-author').innerText = "Tài Dev Nguyễn";
-            if (document.getElementById('meta-date')) document.getElementById('meta-date').innerText = "02/11/2026";
-            if (document.getElementById('meta-version')) document.getElementById('meta-version').innerText = "v2.3 (Commercial)";
-            if (document.getElementById('meta-mc')) document.getElementById('meta-mc').innerText = "1.20.6 - 1.21+";
-            if (document.getElementById('meta-platform')) document.getElementById('meta-platform').innerText = "Paper, Purpur, Spigot";
+            if (document.getElementById('meta-author')) document.getElementById('meta-author').innerText = "Team JAO MC & Tài Dev Nguyễn";
+            if (document.getElementById('meta-date')) document.getElementById('meta-date').innerText = "Tháng 11, 2026";
+            if (document.getElementById('meta-version')) document.getElementById('meta-version').innerText = "v2.3.0 (Commercial Private)";
+            if (document.getElementById('meta-mc')) document.getElementById('meta-mc').innerText = "1.20.6 - 1.21.x";
+            if (document.getElementById('meta-platform')) document.getElementById('meta-platform').innerText = "Folia, Paper, Purpur, Spigot";
             if (document.getElementById('meta-downloads')) document.getElementById('meta-downloads').innerText = "1,024 lượt";
             
             // Purchase / License Box update (Bản quyền riêng, không phải mã nguồn mở)
             const licenseHeader = document.getElementById('sidebar-price-badge');
             if (licenseHeader) {
-                licenseHeader.className = "text-sm font-extrabold text-amber-400 flex items-center space-x-1";
+                licenseHeader.className = "text-sm font-extrabold text-amber-400 flex items-center space-x-1.5";
                 licenseHeader.innerHTML = `<i class="fa-solid fa-crown text-xs"></i><span>Bản Quyền Riêng</span>`;
             }
             
-            const eulaDesc = document.querySelector('.panel-glass .text-\\[11px\\].text-gray-400');
+            const eulaDesc = document.getElementById('eula-description');
             if (eulaDesc) {
-                eulaDesc.innerHTML = `Thỏa thuận cấp phép bản quyền thương mại độc quyền (Commercial Private License). Phát triển bởi <strong>Tài Dev Nguyễn</strong>. <strong>Không phải mã nguồn mở</strong>. Mọi hành vi sao chép, phân phối hoặc dịch ngược lại khi chưa có sự đồng ý đều bị nghiêm cấm theo quy định bản quyền.`;
+                eulaDesc.innerHTML = `Thỏa thuận cấp phép bản quyền thương mại độc quyền (Commercial Private License). Phát triển bởi <strong>Team JAO MC &amp; Tài Dev Nguyễn</strong>. <strong>Không phải mã nguồn mở</strong>. Mọi hành vi sao chép, phân phối hoặc dịch ngược lại khi chưa có sự đồng ý đều bị nghiêm cấm theo quy định bản quyền.`;
+            }
+
+            const supportPackList = document.getElementById('support-pack-list');
+            if (supportPackList) {
+                supportPackList.innerHTML = `
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-cyan-400 text-xs"></i>
+                        <span>Tải xuống tài nguyên (.jar)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-cyan-400 text-xs"></i>
+                        <span>Truy cập toàn bộ tài liệu &amp; bản cập nhật mới</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-cyan-400 text-xs"></i>
+                        <span>Hỗ trợ kỹ thuật qua Discord Server</span>
+                    </div>
+                `;
             }
 
             // Sửa link GitHub của plugin tu tiên (cả banner lẫn nút download)
@@ -919,447 +937,1331 @@
             const downloadBtn = document.getElementById('btn-download');
             if (downloadBtn) {
                 downloadBtn.href = "https://github.com/Jaojao00/TuTienPlugin";
-                downloadBtn.className = "w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-sm shadow-[0_0_20px_rgba(34,211,238,0.35)] flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5";
-                downloadBtn.innerHTML = `<i class="fa-brands fa-github text-base"></i><span>Tải Về Từ GitHub</span>`;
+                downloadBtn.className = "w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-400 hover:to-yellow-500 text-black font-extrabold text-sm shadow-[0_0_20px_rgba(245,158,11,0.35)] flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5";
+                downloadBtn.innerHTML = `<i class="fa-brands fa-github text-base"></i><span>Kho Lưu Trữ GitHub (Bản Quyền)</span>`;
             }
 
-            // Overview Content for TuTienPlugin (Cập nhật chuẩn 100% từ README v2.3)
+            // Overview Content for TuTienPlugin (Cập nhật 100% chuẩn Tài Liệu Kỹ Thuật v2.3.0)
             document.getElementById('tab-content-overview').innerHTML = `
-                <!-- PHẦN I: TỔNG QUAN & ĐIỂM NỔI BẬT V2.3 -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-yin-yang text-amber-400"></i>
-                        <span>I. Tổng Quan & 6 Điểm Nâng Cấp Đột Phá Bản v2.3</span>
-                    </h2>
-                    <div class="mt-4 text-sm text-gray-300 space-y-3 leading-relaxed">
-                        <p>
-                            <strong>TN-TuTienPlugin</strong> mang lại trải nghiệm tu tiên chân thực chuẩn tiên hiệp Á Đông trong thế giới Minecraft. Người chơi bắt đầu hành trình từ <strong>Phàm Nhân</strong>, khai mở linh căn, tọa thiền nhập định hấp thu thiên địa linh khí, thu hoạch linh thảo luyện thành tiên đan, đào linh khoáng từ máy tạo đá rèn tạo thần binh, vượt qua Cửu Đạo Thiên Kiếp để phi thăng cảnh giới chí cao vô thượng <strong>Đạp Thiên</strong>.
-                        </p>
-                        <p class="text-xs text-amber-300/90 bg-amber-500/10 border border-amber-500/20 p-3 rounded-xl flex items-center space-x-2">
-                            <i class="fa-solid fa-shield-halved text-base text-amber-400"></i>
-                            <span>Bảo vệ tuyệt đối cho Skyblock: Sấm sét dùng strikeLightningEffect không cháy đảo, không biến Villager thành phù thủy, không phá ItemFrame, không rớt đồ hư không và hoàn toàn tương thích hệ thống bảo hộ đảo.</span>
-                        </p>
-                        
-                        <!-- 6 Điểm Nâng Cấp V2.3 Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2">
-                            <div class="p-3.5 rounded-xl bg-black/40 border border-amber-500/20 hover:border-amber-400/40 transition-all">
-                                <div class="font-bold text-amber-400 text-sm mb-1 flex items-center space-x-2">
-                                    <i class="fa-solid fa-arrow-trend-up"></i>
-                                    <span>17 Cảnh Giới Tiên Nghịch</span>
-                                </div>
-                                <p class="text-xs text-gray-400">Cấu trúc chuẩn theo lộ trình Tiên Nghịch từ Phàm Nhân đến Đạp Thiên cảnh với chỉ số chiến đấu và thần thông khác biệt rõ rệt.</p>
+                <!-- BANNER GIỚI THIỆU CHÍNH THỨC -->
+                <div class="p-6 rounded-2xl bg-gradient-to-r from-amber-950/40 via-purple-950/30 to-blue-950/40 border border-amber-500/30 space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-lg shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+                                <i class="fa-solid fa-yin-yang"></i>
+                            </span>
+                            <div>
+                                <h3 class="text-base font-bold text-white tracking-wide">TÀI LIỆU KỸ THUẬT & HỆ THỐNG TOÀN DIỆN V2.3.0</h3>
+                                <p class="text-xs text-amber-300/80">Tứ Đại Kỳ Thư & Đấu Phá Luyện Đan • Zero-Loss Crash-Proof Architecture</p>
                             </div>
-                            <div class="p-3.5 rounded-xl bg-black/40 border border-amber-500/20 hover:border-amber-400/40 transition-all">
-                                <div class="font-bold text-amber-400 text-sm mb-1 flex items-center space-x-2">
-                                    <i class="fa-solid fa-bowl-rice"></i>
-                                    <span>Cơ Chế Tịch Cốc (Khóa Đói)</span>
-                                </div>
-                                <p class="text-xs text-gray-400">Kim Đan giảm 85% tiêu hao (≥ 18/20); Nguyên Anh trở lên đạt Tịch Cốc Đạo Thể khóa thanh đói 20/20 vĩnh viễn!</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">Folia & Paper 1.20.6 - 1.21.x</span>
+                            <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">Team JAO MC</span>
+                        </div>
+                    </div>
+                    <p class="text-xs md:text-sm text-gray-300 leading-relaxed">
+                        Bản tổng hợp báo cáo chi tiết toàn bộ các cơ chế cốt lõi của <strong>TN-TuTienPlugin v2.3.0</strong>: Hệ thống 6 Bậc Linh Căn Ngũ Hành, 17 Đại Cảnh Giới Tiên Nghịch chuẩn xác, 22 Bộ Công Pháp huyền thoại trích lục từ Tứ Đại Kỳ Thư (<em>Phàm Nhân Tu Tiên, Tru Tiên, Tiên Nghịch, Đấu Phá Thương Khung</em>), Hệ thống Luyện Dược Sư Đấu Phá (Dược Đỉnh, Dị Hỏa, Đan Lôi), Đan Độc & Kháng Thuốc, Tông Môn & Tàng Kinh Các, cùng hệ thống lệnh điều hành toàn diện.
+                    </p>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">
+                        <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center space-x-2.5">
+                            <i class="fa-solid fa-bolt text-amber-400 text-base"></i>
+                            <div>
+                                <div class="font-bold text-white">Zero-Grief Kiếp</div>
+                                <div class="text-[10px] text-gray-400">Không nổ, không cháy đảo</div>
                             </div>
-                            <div class="p-3.5 rounded-xl bg-black/40 border border-amber-500/20 hover:border-amber-400/40 transition-all">
-                                <div class="font-bold text-amber-400 text-sm mb-1 flex items-center space-x-2">
-                                    <i class="fa-solid fa-bolt"></i>
-                                    <span>Phân Hóa Chỉ Số Vượt Trội</span>
-                                </div>
-                                <p class="text-xs text-gray-400">Tốc độ chạy (0.200 ➔ 0.400), Giáp bẩm sinh (+0 ➔ +70), Kháng lùi (0% ➔ 100%) và Giảm sát thương nhận vào (0% ➔ 50%).</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center space-x-2.5">
+                            <i class="fa-solid fa-fire-flame-curved text-rose-400 text-base"></i>
+                            <div>
+                                <div class="font-bold text-white">6 Loại Dị Hỏa</div>
+                                <div class="text-[10px] text-gray-400">Đấu Phá Luyện Đan GUI</div>
                             </div>
-                            <div class="p-3.5 rounded-xl bg-black/40 border border-amber-500/20 hover:border-amber-400/40 transition-all">
-                                <div class="font-bold text-amber-400 text-sm mb-1 flex items-center space-x-2">
-                                    <i class="fa-solid fa-circle-dot"></i>
-                                    <span>Tọa Thiền Tụ Linh Trận</span>
-                                </div>
-                                <p class="text-xs text-gray-400">Xuất hiện Tụ Linh Trận Bát Quái xoay tròn dưới chân, luồng Linh Khí xoắn ốc (Helix), hào quang Tử Khí Đông Lai và chuông tiên ngân nga.</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center space-x-2.5">
+                            <i class="fa-solid fa-book-journal-whills text-cyan-400 text-base"></i>
+                            <div>
+                                <div class="font-bold text-white">22 Bộ Công Pháp</div>
+                                <div class="text-[10px] text-gray-400">Tứ Đại Danh Tác Tiên Hiệp</div>
                             </div>
-                            <div class="p-3.5 rounded-xl bg-black/40 border border-amber-500/20 hover:border-amber-400/40 transition-all">
-                                <div class="font-bold text-amber-400 text-sm mb-1 flex items-center space-x-2">
-                                    <i class="fa-solid fa-cloud"></i>
-                                    <span>Ngự Không Đạp Mây An Toàn</span>
-                                </div>
-                                <p class="text-xs text-gray-400">Tường Vân mây tiên bồng bềnh dưới chân, Phong Độn Trận xoáy 4 cực, phân cấp Tiên Vân và Slow Falling 10s khi hết linh lực chống rơi Void.</p>
-                            </div>
-                            <div class="p-3.5 rounded-xl bg-black/40 border border-amber-500/20 hover:border-amber-400/40 transition-all">
-                                <div class="font-bold text-amber-400 text-sm mb-1 flex items-center space-x-2">
-                                    <i class="fa-solid fa-table-columns"></i>
-                                    <span>TAB Anti-Overflow</span>
-                                </div>
-                                <p class="text-xs text-gray-400">Tách riêng biến định dạng rút gọn %tutien_linhcan% (~15 ký tự) giúp hiển thị bảng TAB và Scoreboard siêu gọn, không tràn viền.</p>
+                        </div>
+                        <div class="p-3 rounded-xl bg-black/40 border border-white/10 flex items-center space-x-2.5">
+                            <i class="fa-solid fa-database text-emerald-400 text-base"></i>
+                            <div>
+                                <div class="font-bold text-white">Zero-Loss Crash</div>
+                                <div class="text-[10px] text-gray-400">PDC NBT & Async 30s</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- PHẦN II: 17 ĐẠI CẢNH GIỚI TIÊN NGHỊCH & BẢNG CHỈ SỐ -->
-                <div>
+                <!-- PHẦN I: HỆ THỐNG TỘC HỆ, LINH CĂN & NGŨ HÀNH -->
+                <div class="space-y-4 pt-4">
                     <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-mountain text-amber-400"></i>
-                        <span>II. Hệ Thống 17 Cảnh Giới Tiên Nghịch & Bảng Chỉ Số Thuộc Tính</span>
+                        <i class="fa-solid fa-dna text-cyan-400"></i>
+                        <span>Phần I. Hệ Thống Tộc Hệ, Linh Căn & Ngũ Hành</span>
                     </h2>
-                    <div class="mt-4 text-xs md:text-sm text-gray-300 space-y-4">
-                        <div class="p-3.5 rounded-xl bg-black/50 border border-amber-500/30 text-xs font-mono text-amber-300 leading-relaxed overflow-x-auto whitespace-nowrap">
-                            Phàm Nhân ➔ Luyện Khí ➔ Trúc Cơ ➔ Kim Đan ➔ Nguyên Anh ➔ Hóa Thần ➔ Anh Biến ➔ Vấn Đỉnh ➔ Âm Hư ➔ Dương Thực ➔ Khuy Niết ➔ Tịnh Niết ➔ Toái Niết ➔ Không Niết ➔ Không Linh ➔ Không Huyền ➔ Đạp Thiên
-                        </div>
-                        
-                        <!-- Bảng thuộc tính 17 cảnh giới -->
-                        <div class="overflow-x-auto border border-white/10 rounded-xl">
-                            <table class="w-full text-left text-[11px] md:text-xs">
-                                <thead class="bg-black/70 text-amber-300 border-b border-white/10">
-                                    <tr>
-                                        <th class="p-2.5">Cảnh Giới</th>
-                                        <th class="p-2.5 text-center">Tu Vi/Tầng</th>
-                                        <th class="p-2.5 text-center">Máu (HP)</th>
-                                        <th class="p-2.5 text-center">Linh Lực</th>
-                                        <th class="p-2.5 text-center">Sát Thương</th>
-                                        <th class="p-2.5 text-center">Tốc Độ</th>
-                                        <th class="p-2.5 text-center">Giáp / Bền</th>
-                                        <th class="p-2.5 text-center">Kháng Lùi</th>
-                                        <th class="p-2.5 text-center">Kháng Đòn</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-white/5 bg-black/30 font-mono text-gray-300">
-                                    <tr><td class="p-2 font-bold text-white">Phàm Nhân</td><td class="p-2 text-center text-gray-400">100</td><td class="p-2 text-center text-red-400">20.0</td><td class="p-2 text-center text-cyan-400">0</td><td class="p-2 text-center text-orange-400">1.0</td><td class="p-2 text-center">0.200</td><td class="p-2 text-center">0 / 0</td><td class="p-2 text-center">0%</td><td class="p-2 text-center">0%</td></tr>
-                                    <tr><td class="p-2 font-bold text-amber-200">Luyện Khí</td><td class="p-2 text-center text-gray-400">150</td><td class="p-2 text-center text-red-400">24.0</td><td class="p-2 text-center text-cyan-400">150</td><td class="p-2 text-center text-orange-400">2.0</td><td class="p-2 text-center">0.205</td><td class="p-2 text-center">+2 / 0</td><td class="p-2 text-center">5%</td><td class="p-2 text-center">2%</td></tr>
-                                    <tr><td class="p-2 font-bold text-amber-200">Trúc Cơ</td><td class="p-2 text-center text-gray-400">1.500</td><td class="p-2 text-center text-red-400">30.0</td><td class="p-2 text-center text-cyan-400">500</td><td class="p-2 text-center text-orange-400">4.0</td><td class="p-2 text-center">0.210</td><td class="p-2 text-center">+4 / +1</td><td class="p-2 text-center">10%</td><td class="p-2 text-center">4%</td></tr>
-                                    <tr><td class="p-2 font-bold text-amber-300">Kim Đan</td><td class="p-2 text-center text-gray-400">6.000</td><td class="p-2 text-center text-red-400">40.0</td><td class="p-2 text-center text-cyan-400">1.000</td><td class="p-2 text-center text-orange-400">7.0</td><td class="p-2 text-center">0.220</td><td class="p-2 text-center">+7 / +2</td><td class="p-2 text-center">20%</td><td class="p-2 text-center">8%</td></tr>
-                                    <tr><td class="p-2 font-bold text-amber-300">Nguyên Anh</td><td class="p-2 text-center text-gray-400">15.000</td><td class="p-2 text-center text-red-400">60.0</td><td class="p-2 text-center text-cyan-400">2.500</td><td class="p-2 text-center text-orange-400">12.0</td><td class="p-2 text-center">0.230</td><td class="p-2 text-center">+10 / +4</td><td class="p-2 text-center">30%</td><td class="p-2 text-center">12%</td></tr>
-                                    <tr><td class="p-2 font-bold text-purple-300">Hóa Thần</td><td class="p-2 text-center text-gray-400">36.000</td><td class="p-2 text-center text-red-400">100.0</td><td class="p-2 text-center text-cyan-400">6.000</td><td class="p-2 text-center text-orange-400">20.0</td><td class="p-2 text-center">0.245</td><td class="p-2 text-center">+14 / +6</td><td class="p-2 text-center">45%</td><td class="p-2 text-center">16%</td></tr>
-                                    <tr><td class="p-2 font-bold text-purple-300">Anh Biến</td><td class="p-2 text-center text-gray-400">90.000</td><td class="p-2 text-center text-red-400">150.0</td><td class="p-2 text-center text-cyan-400">15.000</td><td class="p-2 text-center text-orange-400">35.0</td><td class="p-2 text-center">0.260</td><td class="p-2 text-center">+18 / +8</td><td class="p-2 text-center">60%</td><td class="p-2 text-center">20%</td></tr>
-                                    <tr><td class="p-2 font-bold text-purple-400">Vấn Đỉnh</td><td class="p-2 text-center text-gray-400">200.000</td><td class="p-2 text-center text-red-400">250.0</td><td class="p-2 text-center text-cyan-400">35.000</td><td class="p-2 text-center text-orange-400">60.0</td><td class="p-2 text-center">0.275</td><td class="p-2 text-center">+22 / +10</td><td class="p-2 text-center">75%</td><td class="p-2 text-center">24%</td></tr>
-                                    <tr><td class="p-2 font-bold text-indigo-300">Âm Hư</td><td class="p-2 text-center text-gray-400">450.000</td><td class="p-2 text-center text-red-400">400.0</td><td class="p-2 text-center text-cyan-400">80.000</td><td class="p-2 text-center text-orange-400">100.0</td><td class="p-2 text-center">0.290</td><td class="p-2 text-center">+26 / +12</td><td class="p-2 text-center">85%</td><td class="p-2 text-center">28%</td></tr>
-                                    <tr><td class="p-2 font-bold text-indigo-300">Dương Thực</td><td class="p-2 text-center text-gray-400">900.000</td><td class="p-2 text-center text-red-400">600.0</td><td class="p-2 text-center text-cyan-400">150.000</td><td class="p-2 text-center text-orange-400">150.0</td><td class="p-2 text-center">0.305</td><td class="p-2 text-center">+30 / +14</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">32%</td></tr>
-                                    <tr><td class="p-2 font-bold text-blue-300">Khuy Niết</td><td class="p-2 text-center text-gray-400">1.800.000</td><td class="p-2 text-center text-red-400">1.000.0</td><td class="p-2 text-center text-cyan-400">300.000</td><td class="p-2 text-center text-orange-400">250.0</td><td class="p-2 text-center">0.320</td><td class="p-2 text-center">+35 / +16</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">35%</td></tr>
-                                    <tr><td class="p-2 font-bold text-blue-300">Tịnh Niết</td><td class="p-2 text-center text-gray-400">3.600.000</td><td class="p-2 text-center text-red-400">1.500.0</td><td class="p-2 text-center text-cyan-400">600.000</td><td class="p-2 text-center text-orange-400">400.0</td><td class="p-2 text-center">0.335</td><td class="p-2 text-center">+40 / +18</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">38%</td></tr>
-                                    <tr><td class="p-2 font-bold text-cyan-300">Toái Niết</td><td class="p-2 text-center text-gray-400">7.500.000</td><td class="p-2 text-center text-red-400">2.500.0</td><td class="p-2 text-center text-cyan-400">1.200.000</td><td class="p-2 text-center text-orange-400">700.0</td><td class="p-2 text-center">0.350</td><td class="p-2 text-center">+45 / +20</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">40%</td></tr>
-                                    <tr><td class="p-2 font-bold text-emerald-300">Không Niết</td><td class="p-2 text-center text-gray-400">15.000.000</td><td class="p-2 text-center text-red-400">4.000.0</td><td class="p-2 text-center text-cyan-400">2.500.000</td><td class="p-2 text-center text-orange-400">1.200.0</td><td class="p-2 text-center">0.365</td><td class="p-2 text-center">+50 / +22</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">42%</td></tr>
-                                    <tr><td class="p-2 font-bold text-emerald-400">Không Linh</td><td class="p-2 text-center text-gray-400">30.000.000</td><td class="p-2 text-center text-red-400">7.000.0</td><td class="p-2 text-center text-cyan-400">6.000.000</td><td class="p-2 text-center text-orange-400">2.000.0</td><td class="p-2 text-center">0.380</td><td class="p-2 text-center">+55 / +25</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">45%</td></tr>
-                                    <tr><td class="p-2 font-bold text-emerald-400">Không Huyền</td><td class="p-2 text-center text-gray-400">60.000.000</td><td class="p-2 text-center text-red-400">12.000.0</td><td class="p-2 text-center text-cyan-400">15.000.000</td><td class="p-2 text-center text-orange-400">4.000.0</td><td class="p-2 text-center">0.390</td><td class="p-2 text-center">+60 / +28</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center">48%</td></tr>
-                                    <tr class="bg-amber-500/10"><td class="p-2 font-extrabold text-amber-400">Đạp Thiên</td><td class="p-2 text-center text-gray-300">150.000.000</td><td class="p-2 text-center text-red-400 font-bold">20.000.0</td><td class="p-2 text-center text-cyan-300 font-bold">50.000.000</td><td class="p-2 text-center text-orange-400 font-bold">8.000.0</td><td class="p-2 text-center text-white font-bold">0.400</td><td class="p-2 text-center text-amber-300 font-bold">+70 / +30</td><td class="p-2 text-center text-emerald-400 font-bold">100%</td><td class="p-2 text-center text-amber-400 font-bold">50%</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                    <p class="text-xs md:text-sm text-gray-300 leading-relaxed">
+                        Linh Căn là căn cơ bẩm sinh của tu sĩ, quyết định tốc độ hấp thu linh khí thiên địa, phẩm cấp công pháp có thể lĩnh ngộ, hiệu suất luyện đan và khả năng thao khống hỏa diễm.
+                    </p>
 
-                <!-- PHẦN III: TỊCH CỐC & ĐỀ KHÁNG TÀ KHÍ -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-shield-virus text-amber-400"></i>
-                        <span>III. Cơ Chế Tịch Cốc & Bách Độc Bất Xâm</span>
-                    </h2>
-                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
-                            <h4 class="font-bold text-amber-400 text-sm flex items-center space-x-1.5">
-                                <i class="fa-solid fa-utensils"></i>
-                                <span>Cơ Chế Tịch Cốc (Khóa Thanh Đói)</span>
-                            </h4>
-                            <ul class="space-y-1.5 text-gray-300">
-                                <li>• <strong>Phàm Nhân:</strong> Tiêu hao độ đói tiêu chuẩn của Minecraft.</li>
-                                <li>• <strong>Luyện Khí ➔ Trúc Cơ:</strong> Giảm 30% ➔ 60% tốc độ tiêu hao đói.</li>
-                                <li>• <strong>Kim Đan:</strong> Giảm 85% tiêu hao đói, không bao giờ tụt dưới 18/20.</li>
-                                <li>• <strong>Nguyên Anh trở lên:</strong> <span class="text-amber-300 font-bold">Tịch Cốc Đạo Thể</span> — Miễn nhiễm 100% đói, khóa thanh thức ăn 20/20 vĩnh viễn!</li>
-                            </ul>
-                        </div>
-                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
-                            <h4 class="font-bold text-cyan-400 text-sm flex items-center space-x-1.5">
-                                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                                <span>Đề Kháng Tà Khí & Thanh Tẩy Độc Tố</span>
-                            </h4>
-                            <ul class="space-y-1.5 text-gray-300">
-                                <li>• <strong>Kim Đan ➔ Vấn Đỉnh:</strong> Tỷ lệ 30% ➔ 75% tự động hóa giải debuff xấu (Độc, Slowness, Hư nhược, Mù mắt).</li>
-                                <li>• <strong>Âm Hư ➔ Đạp Thiên:</strong> <span class="text-emerald-400 font-bold">Bách Độc Bất Xâm</span> — Miễn nhiễm 100% mọi hiệu ứng tiêu cực!</li>
-                                <li>• <strong>Kháng đẩy lùi tối đa:</strong> Từ Dương Thực cảnh trở lên miễn nhiễm hoàn toàn knockback.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PHẦN IV: TỌA THIỀN & NGỰ KHÔNG ĐẠP MÂY -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-cloud-bolt text-amber-400"></i>
-                        <span>IV. Tọa Thiền Tu Luyện & Ngự Không Đạp Mây</span>
-                    </h2>
-                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
-                            <h4 class="font-bold text-amber-400 text-sm flex items-center space-x-1.5">
-                                <i class="fa-solid fa-spa"></i>
-                                <span>Tọa Thiền Tụ Linh Trận (/tt tuluyen)</span>
-                            </h4>
-                            <p class="text-gray-300 leading-relaxed">
-                                Vòng tròn hạt sáng Bát Quái xoay tròn dưới chân (bán kính 1.3 block). Luồng Linh Khí xoắn ốc (Helix) cuộn từ đất lên đỉnh đầu kèm hào quang Tử Khí Đông Lai và tiếng chuông tiên ngân nga mỗi 12 giây.
-                            </p>
-                            <p class="text-gray-400">
-                                Tăng Tu Vi, hồi phục Linh Lực, nhận Điểm Bế Quan (1 điểm/phút) và tự động kích hoạt Luyện Đan mỗi 5 giây.
-                            </p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
-                            <h4 class="font-bold text-cyan-400 text-sm flex items-center space-x-1.5">
-                                <i class="fa-solid fa-feather"></i>
-                                <span>Ngự Không Đạp Mây (/tt ngukhong)</span>
-                            </h4>
-                            <p class="text-gray-300 leading-relaxed">
-                                Kích hoạt từ cảnh giới Kim Đan. Tiêu hao 50 Linh Lực / 2s (Kiếm Tu chỉ tiêu hao 25). Xuất hiện Tường Vân (mây tiên bồng bềnh dưới chân) và Phong Độn Trận xoáy 4 cực.
-                            </p>
-                            <p class="text-gray-400">
-                                Phân cấp mây: Mây trắng tinh khôi (Kim Đan) ➔ Tử Điện (Hóa Thần) ➔ Cửu Sắc (Âm Hư+). Tự động ban Slow Falling 10s khi hết mana chống rơi Void.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PHẦN V: 6 BẬC LINH CĂN & 7 ĐẠI ĐẠO -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-seedling text-amber-400"></i>
-                        <span>V. 6 Bậc Linh Căn & 7 Đại Đạo Tu Tiên</span>
-                    </h2>
-                    <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-white/10">
-                            <div class="font-bold text-white mb-1.5 flex items-center space-x-1">
-                                <span>🌿 6 Bậc Linh Căn:</span>
-                            </div>
-                            <ul class="text-gray-400 space-y-1">
-                                <li>• Phế Linh Căn (x1.0) | Tạp Linh Căn (x1.5)</li>
-                                <li>• Chân Linh Căn (x2.5) | Đơn Linh Căn (x4.0)</li>
-                                <li>• Thiên Linh Căn (x7.0) | Hỗn Độn Linh Căn (x20.0)</li>
-                            </ul>
-                        </div>
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-white/10">
-                            <div class="font-bold text-white mb-1.5 flex items-center space-x-1">
-                                <span>🗡️ Kiếm Tu & 🛡️ Thể Tu:</span>
-                            </div>
-                            <p class="text-gray-400">• Kiếm Tu: +20% Damage kiếm, giảm 50% linh lực Ngự Không.</p>
-                            <p class="text-gray-400">• Thể Tu: +40% HP tối đa, +4 Giáp Kim Cang, giảm 10% sát thương.</p>
-                        </div>
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-white/10">
-                            <div class="font-bold text-white mb-1.5 flex items-center space-x-1">
-                                <span>🔮 Pháp Tu & 👹 Ma Tu:</span>
-                            </div>
-                            <p class="text-gray-400">• Pháp Tu: +15% sát thương phép, +30% Linh Lực tối đa.</p>
-                            <p class="text-gray-400">• Ma Tu: +30% sát thương công kích (nhận thêm 20% sát thương).</p>
-                        </div>
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-white/10">
-                            <div class="font-bold text-white mb-1.5 flex items-center space-x-1">
-                                <span>🐉 Yêu Tu, 🧪 Đan Tu & 💑 Song Tu:</span>
-                            </div>
-                            <p class="text-gray-400">• Yêu Tu: +15% tốc độ, x2 hồi HP. Đan Tu: +20% tỷ lệ đan, +25% chỉ số đan.</p>
-                            <p class="text-gray-400">• Song Tu: +5% HP/Dame, +15% Tu Vi khi tọa thiền cạnh đạo lữ.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PHẦN VI: LUYỆN ĐAN & CHẾ TÁC TRANG BỊ -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-flask-vial text-amber-400"></i>
-                        <span>VI. Bát Quái Đan Lò & Lò Rèn 8 Phẩm Cấp</span>
-                    </h2>
-                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
-                            <h4 class="font-bold text-amber-400 text-sm flex items-center space-x-1.5">
-                                <i class="fa-solid fa-fire-burner"></i>
-                                <span>Bát Quái Đan Lò (/tt luyendan)</span>
-                            </h4>
-                            <p class="text-gray-300">
-                                Menu 54 ô phân trang hỗ trợ toàn bộ 50+ công thức đan dược 4 bậc: Nhất-Tam Phẩm (23 loại), Tứ-Lục Phẩm (10 loại), Thất Phẩm+ (5 loại), Đan Đột Phá (16 loại).
-                            </p>
-                            <p class="text-gray-400">
-                                Tự động luyện chế đan dược đã chọn mỗi 5 giây khi tọa thiền. Ăn trực tiếp đan dược tăng vĩnh viễn chỉ số thuộc tính.
-                            </p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
-                            <h4 class="font-bold text-purple-400 text-sm flex items-center space-x-1.5">
-                                <i class="fa-solid fa-hammer"></i>
-                                <span>Lò Rèn Linh Khí (/tt chetac)</span>
-                            </h4>
-                            <p class="text-gray-300">
-                                Tiêu hao Khoáng Thạch rèn 8 loại khí vật: Kiếm Thần Linh, Kiếm Huyền Thiết, Giáp Thần Lực, Thiên Phong, Mũ, Quần, Giày, Phụ Kiện Hộ Mệnh.
-                            </p>
-                            <p class="text-gray-400">
-                                8 Phẩm cấp khí vật: Phàm Phẩm ➔ Hạ ➔ Trung ➔ Thượng ➔ Chí Bảo ➔ Linh Bảo ➔ Chân Bảo ➔ Linh Khí. Tích hợp AttributeModifier Minecraft thật!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PHẦN VII: GACHA LINH THÚ & PHỤ BẢN BÍ CẢNH -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-paw text-amber-400"></i>
-                        <span>VII. Linh Thú Viên & Triệu Hồi Gacha (Pity 90 Lần)</span>
-                    </h2>
-                    <div class="mt-4 text-xs space-y-3">
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-white/10 text-gray-300 leading-relaxed">
-                            <strong>Phụ Bản Linh Thú Viên (/tt linhthuvien):</strong> Gồm Huyền Ảnh Bí Cảnh (triệu hồi quái linh an toàn), Thí Luyện Đạo Tràng (đào quặng x2.5 Khoáng Thạch và Tu Vi), Thiên Nguyên Cấm Địa (khiêu chiến Cổ Thần Boss khổng lồ nhận Tinh Hoa Cổ Thần).
-                        </div>
-                        <div class="overflow-x-auto border border-white/10 rounded-xl">
+                    <!-- Bảng 1: Phẩm cấp linh căn -->
+                    <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-amber-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>1. Phân Loại 6 Phẩm Cấp Linh Căn Bẩm Sinh</span>
+                        </h4>
+                        <div class="overflow-x-auto rounded-xl border border-white/10">
                             <table class="w-full text-left text-xs">
-                                <thead class="bg-black/70 text-amber-300 border-b border-white/10">
+                                <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10">
                                     <tr>
-                                        <th class="p-2.5">Linh Thú Trợ Chiến</th>
-                                        <th class="p-2.5 text-center">Tỷ Lệ</th>
-                                        <th class="p-2.5">Hiệu Ứng Bị Động Khi Giữ Trong Túi Đồ</th>
+                                        <th class="p-3">Phẩm Cấp</th>
+                                        <th class="p-3">Số Lượng Hệ</th>
+                                        <th class="p-3">Độ Thuần Khiết</th>
+                                        <th class="p-3">Đặc Điểm & Khả Năng Tu Luyện</th>
                                     </tr>
                                 </thead>
-                                <tbody class="divide-y divide-white/5 bg-black/30 text-gray-300">
-                                    <tr><td class="p-2 font-bold text-white">Hoa Linh Mao</td><td class="p-2 text-center text-gray-400">60%</td><td class="p-2">+5 Sinh lực tối đa</td></tr>
-                                    <tr><td class="p-2 font-bold text-cyan-300">Thanh Lang Vũ</td><td class="p-2 text-center text-gray-400">20%</td><td class="p-2">+10% Tốc độ nhận Tu Vi khi AFK</td></tr>
-                                    <tr><td class="p-2 font-bold text-emerald-300">Huyết Phù Quy</td><td class="p-2 text-center text-gray-400">10%</td><td class="p-2">+15% Phòng thủ (Giảm 15% sát thương nhận vào)</td></tr>
-                                    <tr><td class="p-2 font-bold text-purple-300">Thiên Mãu Hổ</td><td class="p-2 text-center text-gray-400">6%</td><td class="p-2">+20% Sát thương cận chiến</td></tr>
-                                    <tr><td class="p-2 font-bold text-amber-300">Long Mã Kim Cương</td><td class="p-2 text-center text-gray-400">3%</td><td class="p-2">+30% Tốc độ di chuyển & Tốc độ bay</td></tr>
-                                    <tr class="bg-amber-500/10"><td class="p-2 font-extrabold text-amber-400">Thiên Phượng (Cực Hiếm)</td><td class="p-2 text-center text-amber-400 font-bold">1%</td><td class="p-2 font-bold text-amber-300">+50% Tốc độ Tu Vi AFK & +25 Sinh lực tối đa</td></tr>
+                                <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30">
+                                    <tr class="hover:bg-white/5 transition-colors">
+                                        <td class="p-3 font-semibold text-gray-400">Phế Linh Căn</td>
+                                        <td class="p-3">0 hoặc Tạp nham</td>
+                                        <td class="p-3 text-rose-400 font-mono">0% - 15%</td>
+                                        <td class="p-3">Kinh mạch bế tắc, tốc độ tu vi cực chậm (-50%). Cần Tẩy Tủy Đan để tái tạo.</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition-colors">
+                                        <td class="p-3 font-semibold text-gray-300">Ngụy Linh Căn</td>
+                                        <td class="p-3">4 - 5 Hệ tạp hợp</td>
+                                        <td class="p-3 text-amber-400 font-mono">15% - 40%</td>
+                                        <td class="p-3">Khí cảm hỗn loạn, dễ tẩu hỏa nhập ma, cần đan dược hỗ trợ khi đột phá.</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition-colors">
+                                        <td class="p-3 font-semibold text-cyan-300">Chân Linh Căn</td>
+                                        <td class="p-3">2 - 3 Hệ thuần</td>
+                                        <td class="p-3 text-cyan-400 font-mono">40% - 75%</td>
+                                        <td class="p-3">Tư chất trung thượng, tu luyện ổn định, tương thích đa phần công pháp ngũ hành.</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition-colors">
+                                        <td class="p-3 font-semibold text-purple-300">Thiên Linh Căn</td>
+                                        <td class="p-3">1 Hệ Đơn Nhất</td>
+                                        <td class="p-3 text-purple-400 font-mono">75% - 95%</td>
+                                        <td class="p-3">Thiên chi kiêu tử, hấp thụ linh khí nhanh gấp đôi (+100%), không gặp nghẽn cổ chai.</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition-colors">
+                                        <td class="p-3 font-semibold text-indigo-300">Biến Dị Linh Căn</td>
+                                        <td class="p-3">Lôi / Phong / Băng</td>
+                                        <td class="p-3 text-indigo-400 font-mono">80% - 98%</td>
+                                        <td class="p-3">Biến dị ngũ hành hiếm có, sát thương thần thông bộc phát cực lớn, tốc độ lướt nhanh.</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition-colors bg-amber-500/5">
+                                        <td class="p-3 font-bold text-amber-400">Hỗn Độn Linh Căn</td>
+                                        <td class="p-3">Đồng Hóa Ngũ Hành</td>
+                                        <td class="p-3 text-amber-300 font-mono font-bold">99% - 100%</td>
+                                        <td class="p-3">Tư chất tối thượng chí tôn, hấp thu mọi nguồn linh khí, tu luyện vạn pháp vô ngại.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
 
-                <!-- PHẦN VIII: MÁY TẠO ĐÁ & PLACEHOLDERAPI CHUẨN TAB -->
-                <div>
-                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-code text-amber-400"></i>
-                        <span>VIII. Tích Hợp Máy Tạo Đá Skyblock & PlaceholderAPI Chuẩn TAB</span>
-                    </h2>
-                    <div class="mt-4 space-y-3 text-xs">
-                        <div class="p-3.5 rounded-xl bg-black/40 border border-white/10 text-gray-300 leading-relaxed">
-                            Đào Đá Cuội, Đá Sâu, Hắc Diệu Thạch hoặc Quặng tại máy tạo đá tự động nhận Khoáng Thạch, Tu Vi và tích điểm nhiệm vụ hàng ngày. Dùng lệnh <code class="text-amber-400 font-mono">/tt doikhoang</code> để đổi quặng sang Khoáng Thạch.
-                        </div>
-                        <div class="p-4 rounded-xl bg-black/50 border border-cyan-500/30 text-gray-300 space-y-2">
-                            <div class="font-bold text-cyan-300 text-sm flex items-center space-x-2">
-                                <i class="fa-solid fa-check-double text-cyan-400"></i>
-                                <span>Biến %tutien_linhcan% Tối Ưu Chống Tràn TAB List:</span>
-                            </div>
-                            <p class="text-xs text-gray-400">
-                                Hãy sử dụng <code class="text-amber-300 font-mono bg-black/60 px-1.5 py-0.5 rounded">%tutien_linhcan%</code> cho TAB và Scoreboard. Biến đã được tối ưu độ dài (~15 ký tự, ví dụ: <span class="text-yellow-400 font-mono">Thiên Linh Căn (Hỏa)</span>), hoàn toàn không làm tràn hay lệch giao diện.
+                    <!-- Thập Nhị Ngũ Hành & Tương Sinh Tương Khắc -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-cyan-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                <span>2. Thập Nhị Ngũ Hành & Thuộc Tính Dị Biến</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                • <strong>Ngũ Hành Chính</strong> (Kim - Mộc - Thủy - Hỏa - Thổ): Nền tảng vạn vật. Hệ Hỏa bắt buộc cho Luyện Dược Sư; Mộc tăng 25% chiết xuất thảo dược; Kim tăng sát thương kiếm khí; Thổ tăng phòng ngự; Thủy dưỡng sinh mệnh.<br>
+                                • <strong>Thuộc Tính Dị Biến</strong> (Lôi - Phong - Băng): Lôi hệ giáng thiên kiếp thần lôi; Phong hệ thần tốc đạp gió; Băng hệ đông kết làm chậm kẻ thù.<br>
+                                • <strong>Thuộc Tính Đặc Thù</strong> (Quang - Ám - Huyết - Mộng): Xuất hiện trong các đại công pháp đỉnh cấp (Đại Diễn Quyết, Sinh Tử Ý Cảnh, Hoàng Tuyền, Phạn Thánh).
                             </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-emerald-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <span>3. Quy Luật Tương Sinh - Tương Khắc</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                • <strong class="text-emerald-400">Tương Sinh (+15% hiệu quả)</strong>: Kim sinh Thủy &rarr; Thủy sinh Mộc &rarr; Mộc sinh Hỏa &rarr; Hỏa sinh Thổ &rarr; Thổ sinh Kim. Tu sĩ tu luyện công pháp tương sinh với linh căn nhận thêm <strong>15% tốc độ tu vi</strong> và giảm tiêu hao linh lực.<br>
+                                • <strong class="text-rose-400">Tương Khắc (-20% hiệu quả)</strong>: Kim khắc Mộc &rarr; Mộc khắc Thổ &rarr; Thổ khắc Thủy &rarr; Thủy khắc Hỏa &rarr; Hỏa khắc Kim. Đòn đánh hệ khắc chế gây thêm <strong>20% sát thương chuẩn</strong> lên mục tiêu; ngược lại tu luyện công pháp tương khắc sẽ bị nghẽn kinh mạch.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 5 Hệ Phái Tu Tiên -->
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-3">
+                        <h4 class="text-sm font-bold text-amber-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>4. Năm Đại Hệ Phái Tu Tiên Trong Server</span>
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+                            <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                                <div class="font-bold text-cyan-300">⚔️ Kiếm Tu</div>
+                                <div class="text-gray-400 mt-1">Dĩ khí ngự kiếm, sát thương bộc phát tầm xa và kiếm trận kinh thiên (Thanh Nguyên Kiếm Trận, Tru Tiên).</div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                                <div class="font-bold text-amber-300">🛡️ Thể Tu</div>
+                                <div class="text-gray-400 mt-1">Tôi luyện nhục thân bất toái, miễn nhiễm sát thương vật lý, đòn đánh cận chiến uy lực kinh hoàng (Minh Vương Quyết, Cổ Thần Tộc).</div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                                <div class="font-bold text-rose-300">🔥 Đan Tu / Luyện Dược Sư</div>
+                                <div class="text-gray-400 mt-1">Khống chế hỏa diễm dị hỏa, tôi luyện dược đỉnh, cứu nhân độ thế và cung cấp tiên đan cho tông môn.</div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                                <div class="font-bold text-purple-300">🧠 Thần Thức / Khôi Lỗi Tu</div>
+                                <div class="text-gray-400 mt-1">Phân tách thần niệm điều khiển khôi lỗi trận, phóng thần thức kiếm đâm thẳng vào linh hồn đối phương (Đại Diễn Quyết).</div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-white/5 border border-white/5">
+                                <div class="font-bold text-emerald-300">📜 Phù Tu & Trận Tu</div>
+                                <div class="text-gray-400 mt-1">Vẽ bùa ngự lôi, bố trí Thái Cực Hộ Tông Trận, dịch chuyển tức thời và phong ấn khu vực lãnh địa.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- PHẦN IX: DANH SÁCH LỆNH COMMANDS -->
-                <div>
+                <!-- PHẦN II: HỆ THỐNG 17 CẢNH GIỚI TU VI -->
+                <div class="space-y-4 pt-6">
                     <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                        <i class="fa-solid fa-terminal text-amber-400"></i>
-                        <span>IX. Danh Sách Lệnh Đầy Đủ (Commands)</span>
+                        <i class="fa-solid fa-stairs text-amber-400"></i>
+                        <span>Phần II. Hệ Thống 17 Cảnh Giới Tu Vi (Chuẩn Tiên Nghịch)</span>
                     </h2>
-                    <div class="mt-4 overflow-x-auto">
-                        <table class="w-full text-left text-xs border border-white/10 rounded-xl overflow-hidden">
-                            <thead class="bg-black/70 text-amber-300 border-b border-white/10">
+                    <p class="text-xs md:text-sm text-gray-300 leading-relaxed">
+                        Hệ thống phân cấp chuẩn xác 17 Đại Cảnh Giới theo nguyên tác Tiên Nghịch. Mỗi bước đột phá đều mang lại sự lột xác toàn diện về sinh mệnh, linh lực, sát thương và kích hoạt thiên kiếp giáng thế.
+                    </p>
+
+                    <!-- Bảng 17 Cảnh giới -->
+                    <div class="overflow-x-auto rounded-xl border border-white/10">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10">
                                 <tr>
-                                    <th class="p-2.5">Lệnh</th>
-                                    <th class="p-2.5">Mô tả chức năng</th>
+                                    <th class="p-3">Cảnh Giới</th>
+                                    <th class="p-3">Tu Vi Cần</th>
+                                    <th class="p-3">Máu (HP)</th>
+                                    <th class="p-3">Linh Lực (Mana)</th>
+                                    <th class="p-3">Sát Thương Cơ Bản</th>
+                                    <th class="p-3">% Giảm ST (%DR)</th>
+                                    <th class="p-3">Thiên Kiếp & Đặc Điểm</th>
                                 </tr>
                             </thead>
-                            <tbody class="divide-y divide-white/5 bg-black/20 text-gray-300 font-mono">
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien menu (/tt)</td><td class="p-2 font-sans">Mở Bảng Điều Khiển Trung Tâm 54 ô</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien tuluyen</td><td class="p-2 font-sans">Bật/tắt Tọa Thiền Tu Luyện (Tụ Linh Trận Bát Quái)</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien dokiep</td><td class="p-2 font-sans">Mở giao diện Đột Phá & Độ Kiếp Cửu Lôi</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien ngukhong (/tt ngukiem)</td><td class="p-2 font-sans">Bật/tắt Ngự Không Đạp Mây Tường Vân</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien luyendan</td><td class="p-2 font-sans">Mở Bát Quái Đan Lò (50+ công thức đan)</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien chetac</td><td class="p-2 font-sans">Mở Lò Rèn Linh Khí (Rèn trang bị 8 phẩm cấp)</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien doikhoang</td><td class="p-2 font-sans">Mở quầy quy đổi Khoáng Thạch từ quặng</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien bequan</td><td class="p-2 font-sans">Mở Cửa Hàng Bế Quan đổi đan dược & đạo niệm</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien gacha</td><td class="p-2 font-sans">Mở giao diện Triệu Hồi Linh Thú Trợ Chiến Pity 90</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien linhthuvien</td><td class="p-2 font-sans">Mở phụ bản Bí Cảnh, Đạo Tràng & Cấm Địa Cổ Thần Boss</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien nhiemvu</td><td class="p-2 font-sans">Mở danh sách 6 Nhiệm Vụ Hàng Ngày</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien vangioi</td><td class="p-2 font-sans">Mở Cửa Hàng Vạn Giới Các</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien tuido</td><td class="p-2 font-sans">Mở Túi Đồ Hư Không (Kho lưu trữ tu tiên)</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien xephang</td><td class="p-2 font-sans">Mở Bảng Xếp Hạng Top 10 Toàn Server</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien laptong &lt;tên&gt;</td><td class="p-2 font-sans">Khai tông lập phái trên đảo (Hóa Thần+)</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien tongmon &lt;thao tác&gt;</td><td class="p-2 font-sans">Quản lý thành viên & Đại Điện Tông Môn</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tiende &lt;thần thông&gt;</td><td class="p-2 font-sans">Thi triển Ngũ Đại Thần Thông Tiên Đế</td></tr>
-                                <tr><td class="p-2 text-amber-400 font-bold">/tutien admin ...</td><td class="p-2 font-sans">Lệnh Quản Trị Viên (Quyền tutien.admin)</td></tr>
+                            <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30 font-mono">
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-gray-400">1. Phàm Nhân</td>
+                                    <td class="p-3">0</td>
+                                    <td class="p-3 text-rose-400">20</td>
+                                    <td class="p-3 text-cyan-400">100</td>
+                                    <td class="p-3">+1</td>
+                                    <td class="p-3">0%</td>
+                                    <td class="p-3 font-sans text-gray-400">Chưa khai mở khí hải. Thể chất người thường.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-gray-300">2. Luyện Khí (1-10)</td>
+                                    <td class="p-3">100 - 1,000</td>
+                                    <td class="p-3 text-rose-400">30</td>
+                                    <td class="p-3 text-cyan-400">250</td>
+                                    <td class="p-3">+3</td>
+                                    <td class="p-3">2%</td>
+                                    <td class="p-3 font-sans text-gray-300">Dẫn khí nhập thể. Bắt đầu vận dụng sơ cấp pháp thuật.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-cyan-300">3. Trúc Cơ</td>
+                                    <td class="p-3">1,000 - 5,000</td>
+                                    <td class="p-3 text-rose-400">50</td>
+                                    <td class="p-3 text-cyan-400">500</td>
+                                    <td class="p-3">+6</td>
+                                    <td class="p-3">5%</td>
+                                    <td class="p-3 font-sans text-cyan-300">Đúc thành đạo cơ. Mở khóa Ngự Kiếm Phi Hành (/tt sword).</td>
+                                </tr>
+                                <tr class="bg-amber-500/5">
+                                    <td class="p-3 font-sans font-bold text-amber-300">4. Kết Đan / Kim Đan</td>
+                                    <td class="p-3">5,000 - 20,000</td>
+                                    <td class="p-3 text-rose-400">90</td>
+                                    <td class="p-3 text-cyan-400">1,000</td>
+                                    <td class="p-3">+12</td>
+                                    <td class="p-3">10%</td>
+                                    <td class="p-3 font-sans text-amber-300">3 Đạo Lôi Kiếp. Ngưng kết Kim Đan, mở khóa Ngự Không (/tt nk).</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-purple-300">5. Nguyên Anh</td>
+                                    <td class="p-3">20,000 - 60,000</td>
+                                    <td class="p-3 text-rose-400">150</td>
+                                    <td class="p-3 text-cyan-400">2,000</td>
+                                    <td class="p-3">+20</td>
+                                    <td class="p-3">15%</td>
+                                    <td class="p-3 font-sans text-purple-300">4 Đạo Lôi Kiếp. Nguyên anh xuất khiếu, bất tử khi nhục thân vỡ.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-indigo-300">6. Hóa Thần</td>
+                                    <td class="p-3">60,000 - 150,000</td>
+                                    <td class="p-3 text-rose-400">250</td>
+                                    <td class="p-3 text-cyan-400">3,500</td>
+                                    <td class="p-3">+32</td>
+                                    <td class="p-3">22%</td>
+                                    <td class="p-3 font-sans text-indigo-300">5 Đạo Lôi Kiếp. Lĩnh ngộ Hóa Thần Ý Cảnh (Sinh Tử, Luân Hồi).</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-blue-300">7. Anh Biến</td>
+                                    <td class="p-3">150,000 - 350,000</td>
+                                    <td class="p-3 text-rose-400">400</td>
+                                    <td class="p-3 text-cyan-400">5,500</td>
+                                    <td class="p-3">+48</td>
+                                    <td class="p-3">30%</td>
+                                    <td class="p-3 font-sans text-blue-300">6 Đạo Lôi Kiếp. Tiên khí nhập thể, chuyển hóa linh lực thành tiên nguyên.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-teal-300">8. Vấn Đỉnh</td>
+                                    <td class="p-3">350,000 - 800,000</td>
+                                    <td class="p-3 text-rose-400">600</td>
+                                    <td class="p-3 text-cyan-400">8,000</td>
+                                    <td class="p-3">+70</td>
+                                    <td class="p-3">38%</td>
+                                    <td class="p-3 font-sans text-teal-300">7 Đạo Lôi Kiếp. Vấn đỉnh đạo tâm, chạm đến quy tắc đệ nhất bộ.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-emerald-300">9. Âm Hư</td>
+                                    <td class="p-3">800,000 - 1,500,000</td>
+                                    <td class="p-3 text-rose-400">850</td>
+                                    <td class="p-3 text-cyan-400">12,000</td>
+                                    <td class="p-3">+100</td>
+                                    <td class="p-3">45%</td>
+                                    <td class="p-3 font-sans text-emerald-300">7 Đạo Lôi Kiếp. Bước vào Đệ Nhị Bộ, điều hòa Âm khí kinh mạch.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-yellow-300">10. Dương Thực</td>
+                                    <td class="p-3">1,500,000 - 3,000,000</td>
+                                    <td class="p-3 text-rose-400">1,200</td>
+                                    <td class="p-3 text-cyan-400">18,000</td>
+                                    <td class="p-3">+140</td>
+                                    <td class="p-3">52%</td>
+                                    <td class="p-3 font-sans text-yellow-300">8 Đạo Lôi Kiếp. Ngưng tụ Dương khí thuần dương, đại viên mãn nhị bộ.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-orange-300">11. Khuy Niết</td>
+                                    <td class="p-3">3,000,000 - 6,000,000</td>
+                                    <td class="p-3 text-rose-400">1,700</td>
+                                    <td class="p-3 text-cyan-400">26,000</td>
+                                    <td class="p-3">+190</td>
+                                    <td class="p-3">60%</td>
+                                    <td class="p-3 font-sans text-orange-300">8 Đạo Lôi Kiếp. Sơ bộ dòm ngó thiên đạo niết bàn.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-rose-300">12. Tịnh Niết</td>
+                                    <td class="p-3">6,000,000 - 12,000,000</td>
+                                    <td class="p-3 text-rose-400">2,400</td>
+                                    <td class="p-3 text-cyan-400">36,000</td>
+                                    <td class="p-3">+260</td>
+                                    <td class="p-3">68%</td>
+                                    <td class="p-3 font-sans text-rose-300">9 Đạo Lôi Kiếp. Thanh tẩy ô tạp, thân thể đạt tới cảnh giới thanh tịnh.</td>
+                                </tr>
+                                <tr class="bg-purple-500/5">
+                                    <td class="p-3 font-sans font-bold text-purple-400">13. Toái Niết</td>
+                                    <td class="p-3">12,000,000 - 25,000,000</td>
+                                    <td class="p-3 text-rose-400 font-bold">3,500</td>
+                                    <td class="p-3 text-cyan-400 font-bold">50,000</td>
+                                    <td class="p-3 font-bold">+360</td>
+                                    <td class="p-3 font-bold text-amber-300">75%</td>
+                                    <td class="p-3 font-sans text-purple-300">9 Đạo Diệt Thế Lôi. Đập vỡ niết bàn để tái sinh, đỉnh cao Đệ Nhị Bộ.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-cyan-400">14. Không Niết</td>
+                                    <td class="p-3">25,000,000 - 55,000,000</td>
+                                    <td class="p-3 text-rose-400">5,000</td>
+                                    <td class="p-3 text-cyan-400">75,000</td>
+                                    <td class="p-3">+500</td>
+                                    <td class="p-3">82%</td>
+                                    <td class="p-3 font-sans text-cyan-300">9 Đạo Huyền Thiên Lôi. Bước vào Đệ Tam Bộ, chưởng khống Không Gian.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-cyan-300">15. Không Linh</td>
+                                    <td class="p-3">55,000,000 - 120,000,000</td>
+                                    <td class="p-3 text-rose-400">7,500</td>
+                                    <td class="p-3 text-cyan-400">110,000</td>
+                                    <td class="p-3">+700</td>
+                                    <td class="p-3">88%</td>
+                                    <td class="p-3 font-sans text-cyan-300">9 Đạo Tử Tiêu Thần Lôi. Hồn linh quy nhất, bất diệt linh hồn.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-sans font-semibold text-amber-400">16. Không Huyền</td>
+                                    <td class="p-3">120,000,000 - 250,000,000</td>
+                                    <td class="p-3 text-rose-400">11,000</td>
+                                    <td class="p-3 text-cyan-400">160,000</td>
+                                    <td class="p-3">+1,000</td>
+                                    <td class="p-3">93%</td>
+                                    <td class="p-3 font-sans text-amber-300">9 Đạo Hỗn Độn Kiếp Lôi. Cửu Huyền Quy Nhất, tiệm cận Đạp Thiên Kiều.</td>
+                                </tr>
+                                <tr class="bg-gradient-to-r from-amber-500/10 via-yellow-500/10 to-amber-500/10 border-t-2 border-amber-400/40">
+                                    <td class="p-3 font-sans font-black text-amber-300">17. Đạp Thiên Chí Tôn</td>
+                                    <td class="p-3 text-amber-300 font-bold">250,000,000+</td>
+                                    <td class="p-3 text-rose-400 font-bold">20,000</td>
+                                    <td class="p-3 text-cyan-400 font-bold">300,000</td>
+                                    <td class="p-3 text-amber-300 font-bold">+1,800</td>
+                                    <td class="p-3 text-amber-400 font-bold">98%</td>
+                                    <td class="p-3 font-sans text-amber-300 font-bold">Cửu Trọng Nghịch Thiên Kiếp. Đạp phá cửu thiên, vạn cổ bất diệt chí tôn!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Cơ Chế Khóa Cứng Tu Vi & Zero-Grief Kiếp Lôi -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-black/40 border border-amber-500/20 space-y-2">
+                            <h5 class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>Cơ Chế Khóa Cứng Tu Vi & Nghẽn Cổ Chai</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Khi tu vi chạm mốc tối đa của một cảnh giới (Max Exp), hệ thống sẽ kích hoạt <strong>Khóa Cứng Tu Vi</strong>. Tu sĩ không thể nhận thêm tu vi từ tọa thiền hay đan dược cho tới khi dùng lệnh <code>/tt dk</code> để bước vào độ kiếp. Nếu không có đan dược hộ mạch (như Trúc Cơ Đan, Phá Cảnh Đan), tỷ lệ đột phá thất bại lên tới 40% và bị phản phệ giảm 10% tu vi hiện tại.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-black/40 border border-cyan-500/20 space-y-2">
+                            <h5 class="text-xs font-bold text-cyan-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-cloud-bolt"></i>
+                                <span>Công Nghệ Thiên Kiếp Không Phá Đảo (Zero-Grief)</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Được tối ưu hóa chuyên biệt cho máy chủ Skyblock và Survival: Sấm sét độ kiếp sử dụng gói tin hiệu ứng hình ảnh âm thanh <code>strikeLightningEffect</code>. Sấm sét gây sát thương sấm giáng trực tiếp vào tu sĩ nhưng <strong>hoàn toàn không bắt lửa khối gỗ, không phá hủy block, không biến đổi Villager thành Phù thủy</strong> và tuyệt đối an toàn với mọi hệ thống bảo hộ đảo SuperiorSkyblock2 / BentoBox / GriefPrevention.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHẦN III: HỆ THỐNG 22 BỘ CÔNG PHÁP HUYỀN THOẠI (TỨ ĐẠI KỲ THƯ) -->
+                <div class="space-y-4 pt-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                        <i class="fa-solid fa-book-skull text-purple-400"></i>
+                        <span>Phần III. Hệ Thống 22 Bộ Công Pháp Huyền Thoại (Tứ Đại Kỳ Thư)</span>
+                    </h2>
+                    <p class="text-xs md:text-sm text-gray-300 leading-relaxed">
+                        Trích lục tinh hoa công pháp từ 4 tuyệt tác tiên hiệp kinh điển: <em>Phàm Nhân Tu Tiên, Tru Tiên, Tiên Nghịch, Đấu Phá Thương Khung</em>. Mỗi bộ công pháp sở hữu bí tịch tàn quyển, hiệu ứng nội tại và thần thông võ kỹ kích hoạt thông qua MythicMobs.
+                    </p>
+
+                    <!-- Cơ chế Chủ Tu & Phụ Tu -->
+                    <div class="p-4 rounded-xl bg-purple-950/20 border border-purple-500/30 text-xs text-purple-200 space-y-1.5">
+                        <div class="font-bold flex items-center space-x-2 text-purple-300">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Cơ Chế 1 Chủ Tu + 3 Phụ Tu & Tích Hợp MythicMobs Engine</span>
+                        </div>
+                        <p class="text-gray-300">
+                            Mỗi tu sĩ được chỉ định <strong>1 Công Pháp Chủ Tu</strong> (tăng cường chỉ số nội tại, máu, linh lực và tốc độ tu vi) và tối đa <strong>3 Công Pháp Phụ Tu</strong> (mở khóa các kỹ năng thần thông thi triển qua lệnh <code>/tt skill &lt;id&gt;</code>). Dữ liệu công pháp được lưu cứng bằng thẻ PersistentDataContainer NBT <code>tutien:congphap_id</code>, bảo đảm an toàn dữ liệu 100%. Mọi kỹ năng chiến đấu được liên kết trực tiếp với bộ file kỹ năng <code>TuTienSkills.yml</code> trong MythicMobs v5.
+                        </p>
+                    </div>
+
+                    <!-- Bảng 22 bộ công pháp -->
+                    <div class="overflow-x-auto rounded-xl border border-white/10">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10">
+                                <tr>
+                                    <th class="p-3">Tác Phẩm</th>
+                                    <th class="p-3">Tên Công Pháp</th>
+                                    <th class="p-3">Phẩm Cấp</th>
+                                    <th class="p-3">Thuộc Tính</th>
+                                    <th class="p-3">Hiệu Ứng Bị Động & Thần Thông Võ Kỹ</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30">
+                                <!-- Phàm Nhân Tu Tiên -->
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-semibold text-emerald-400" rowspan="5">Phàm Nhân Tu Tiên</td>
+                                    <td class="p-3 font-bold text-white">Trường Xuân Công</td>
+                                    <td class="p-3 text-gray-300">Hoàng Giai</td>
+                                    <td class="p-3 text-emerald-300 font-mono">Mộc</td>
+                                    <td class="p-3">Tăng tốc độ hồi máu tự nhiên +30%, hấp thu linh khí thảo mộc xung quanh.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Đại Diễn Quyết</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-purple-300 font-mono">Thần Thức</td>
+                                    <td class="p-3">Tăng 80% Thần Thức Hồn Lực, mở rộng phạm vi cảm nhận, miễn nhiễm thôi miên & tẩu hỏa nhập ma.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Phạn Thánh Chân Ma Công</td>
+                                    <td class="p-3 text-amber-400 font-semibold">Thiên Giai</td>
+                                    <td class="p-3 text-rose-400 font-mono">Ma / Thể</td>
+                                    <td class="p-3">Biến hóa Tam Đầu Lục Tí, tăng 120% sát thương cận chiến, giảm 40% sát thương nhận vào trong 20s.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Thanh Nguyên Kiếm Quyết</td>
+                                    <td class="p-3 text-purple-300 font-semibold">Huyền Giai</td>
+                                    <td class="p-3 text-cyan-300 font-mono">Kim / Mộc</td>
+                                    <td class="p-3">Ngưng tụ Kiếm Mang sắc bén, triệu hồi Thanh Trúc Phong Vân Kiếm Trận chém quét đa mục tiêu.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Huyền Ma Luyện Thể</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-amber-300 font-mono">Thể Phách</td>
+                                    <td class="p-3">Cường hóa gân cốt như huyền thiết, miễn nhiễm sát thương rơi ngã và đẩy lùi (Knockback Resist).</td>
+                                </tr>
+
+                                <!-- Tru Tiên -->
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-semibold text-cyan-400" rowspan="5">Tru Tiên</td>
+                                    <td class="p-3 font-bold text-white">Thái Cực Huyền Thanh Đạo</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-blue-300 font-mono">Thanh Khí</td>
+                                    <td class="p-3">Dung hòa đạo môn thiên địa, giảm 25% tiêu hao linh lực khi ngự kiếm phi hành.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Đại Phạm Bát Nhã</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-amber-300 font-mono">Phật Môn</td>
+                                    <td class="p-3">Tạo hộ thể kim chung tráo kim quang chói lọi, phản chấn 20% sát thương cận chiến.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Phần Hương Ngọc Sách</td>
+                                    <td class="p-3 text-purple-300 font-semibold">Huyền Giai</td>
+                                    <td class="p-3 text-rose-300 font-mono">Hỏa</td>
+                                    <td class="p-3">Thao túng Phần Hương Liệt Diễm, thiêu đốt kẻ địch liên tục trong 8 giây (Burn effect).</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Si Tình Chú</td>
+                                    <td class="p-3 text-amber-400 font-semibold">Thiên Giai</td>
+                                    <td class="p-3 text-rose-400 font-mono">Hồn Mệnh</td>
+                                    <td class="p-3">Thần thông tuyệt mạng hộ thể: Chặn đứng đòn chí tử, hồi sinh ngay với 50% máu (Hồi chiêu 30 phút).</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Tru Tiên Kiếm Trận</td>
+                                    <td class="p-3 text-amber-300 font-bold">Tiên Giai</td>
+                                    <td class="p-3 text-purple-400 font-mono">Hỗn Độn</td>
+                                    <td class="p-3">Khởi động Tru Tiên Cổ Kiếm, triệu hồi vạn đạo kiếm khí diệt sát toàn bộ thực thể trong bán kính 25m.</td>
+                                </tr>
+
+                                <!-- Tiên Nghịch -->
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-semibold text-purple-400" rowspan="5">Tiên Nghịch</td>
+                                    <td class="p-3 font-bold text-white">Cổ Thần Quyết</td>
+                                    <td class="p-3 text-amber-400 font-semibold">Thiên Giai</td>
+                                    <td class="p-3 text-amber-400 font-mono">Cổ Thần</td>
+                                    <td class="p-3">Nhục thân toát ra tinh điểm Cổ Thần, tăng vĩnh viễn +500 HP và 30% kháng tất cả hiệu ứng khống chế.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Sinh Tử Ý Cảnh</td>
+                                    <td class="p-3 text-amber-400 font-semibold">Thiên Giai</td>
+                                    <td class="p-3 text-gray-300 font-mono">Ý Cảnh</td>
+                                    <td class="p-3">Lĩnh ngộ ranh giới Sinh - Tử. Đòn đánh có 15% xác suất gây sát thương chuẩn bỏ qua giáp của đối thủ.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Hoàng Tuyền Thăng Thiên</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-yellow-500 font-mono">Âm Thủy</td>
+                                    <td class="p-3">Gọi ra dòng sông Hoàng Tuyền làm chậm mục tiêu 50% và ăn mòn giáp đối phương liên tục.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Mộng Đạo Luân Hồi</td>
+                                    <td class="p-3 text-amber-400 font-semibold">Thiên Giai</td>
+                                    <td class="p-3 text-indigo-300 font-mono">Mộng Hồn</td>
+                                    <td class="p-3">Nhập mộng trăm năm, tăng gấp 3 tốc độ tích lũy đạo niệm khi bế quan thiền định.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Đạp Thiên Quyết</td>
+                                    <td class="p-3 text-amber-300 font-bold">Tiên Giai</td>
+                                    <td class="p-3 text-amber-300 font-mono">Nghịch Mệnh</td>
+                                    <td class="p-3">Chí tôn công pháp đệ cửu kiều. Tăng 100% sát thương bộc phát và miễn dịch thiên lôi kiếp 5 giây.</td>
+                                </tr>
+
+                                <!-- Đấu Phá Thương Khung -->
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-semibold text-rose-400" rowspan="7">Đấu Phá Thương Khung</td>
+                                    <td class="p-3 font-bold text-white">Phần Quyết (Thôn Phệ)</td>
+                                    <td class="p-3 text-amber-400 font-semibold">Đặc Thù</td>
+                                    <td class="p-3 text-rose-400 font-mono">Dị Hỏa</td>
+                                    <td class="p-3">Khởi đầu Hoàng Giai, có thể thôn phệ Dị Hỏa để tiến hóa vô hạn lên Huyền &rarr; Địa &rarr; Thiên &rarr; Tiên Giai!</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Bát Cực Băng</td>
+                                    <td class="p-3 text-purple-300 font-semibold">Huyền Giai</td>
+                                    <td class="p-3 text-amber-300 font-mono">Kình Lực</td>
+                                    <td class="p-3">Tụ lực cận chiến phát ra 8 tầng kình lực ẩn tàng, nổ tung bên trong mục tiêu sau 1.5 giây.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Diễm Phân Thệ Điệp Xích</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-rose-400 font-mono">Hỏa Diễm</td>
+                                    <td class="p-3">Vung trọng xích phóng ra sóng nhiệt hỏa diễm hình quạt dài 12 khối, chém tan lá chắn đối thủ.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Tam Thiên Lôi Động</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-blue-400 font-mono">Lôi Thân</td>
+                                    <td class="p-3">Thân pháp sấm sét thần tốc, dịch chuyển tức thời 8 khối về hướng nhìn để lại tàn ảnh lôi quang.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Phật Nộ Hỏa Liên</td>
+                                    <td class="p-3 text-amber-300 font-bold">Tiên Giai</td>
+                                    <td class="p-3 text-rose-500 font-mono">Dung Hợp Dị Hỏa</td>
+                                    <td class="p-3">Dung hợp các loại Dị Hỏa tạo thành đóa hoa sen lửa hủy thiên diệt địa, tạo vụ nổ diện rộng cực đại.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Thiên Sương Quyền</td>
+                                    <td class="p-3 text-purple-300 font-semibold">Huyền Giai</td>
+                                    <td class="p-3 text-cyan-300 font-mono">Băng Hàn</td>
+                                    <td class="p-3">Đấm ra luồng hàn khí thấu xương làm đông cứng chân đối thủ trong 3 giây.</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="p-3 font-bold text-white">Lục Hợp Du Thân Xích</td>
+                                    <td class="p-3 text-cyan-300 font-semibold">Địa Giai</td>
+                                    <td class="p-3 text-yellow-400 font-mono">Phòng Ngự</td>
+                                    <td class="p-3">Tạo thành lồng xích ảnh phòng thủ bất khả xâm phạm, giảm 60% sát thương đạn và pháp thuật bay tới.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            `;
 
-            // Dependencies for TuTienPlugin (Cập nhật v2.3)
-            document.getElementById('tab-content-dependencies').innerHTML = `
-                <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                    <i class="fa-solid fa-puzzle-piece text-amber-400"></i>
-                    <span>Yêu Cầu Môi Trường TN-TuTienPlugin v2.3</span>
-                </h2>
-                <div class="space-y-4 text-sm text-gray-300">
-                    <div class="flex items-start space-x-3 p-4 rounded-xl bg-black/40 border border-green-500/30">
-                        <i class="fa-solid fa-circle-check text-green-400 text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="font-bold text-white">Nền tảng Minecraft Server</h4>
-                            <p class="text-xs text-gray-400 mt-1">Paper, Purpur hoặc Spigot phiên bản <strong>1.20.6 đến 1.21.x+</strong> (Khuyên dùng Paper/Purpur để đạt hiệu năng tối ưu nhất).</p>
+                <!-- PHẦN IV: HỆ THỐNG LUYỆN ĐAN ĐẤU PHÁ THƯƠNG KHUNG (BTTH ALCHEMY) -->
+                <div class="space-y-4 pt-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                        <i class="fa-solid fa-fire-burner text-rose-400"></i>
+                        <span>Phần IV. Hệ Thống Luyện Đan Đấu Phá Thương Khung (BTTH Alchemy)</span>
+                    </h2>
+                    <p class="text-xs md:text-sm text-gray-300 leading-relaxed">
+                        Hệ thống Luyện Dược Sư mô phỏng 100% nguyên tác <em>Đấu Phá Thương Khung</em>: Thao túng Hồn Lực, thu phục Dị Hỏa, chọn lựa Dược Đỉnh, cân bằng nhiệt độ trong giao diện GUI và chống chọi Đan Lôi thiên kiếp.
+                    </p>
+
+                    <!-- Hồn Lực & Cảnh Giới Hồn Lực -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-purple-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>1. Bốn Chỉ Số Hồn Lực Cốt Lõi</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                • <strong>Cường Độ</strong> (Intensity): Sức mạnh ép khô và tinh luyện dược liệu nhanh hay chậm.<br>
+                                • <strong>Cảm Nhận</strong> (Perception): Độ nhạy nhận diện biến đổi chất trong dược đỉnh.<br>
+                                • <strong>Khống Chế</strong> (Control): Độ ổn định duy trì ngọn lửa, ngăn ngừa nổ lò.<br>
+                                • <strong>Sức Bền</strong> (Endurance): Điểm tiêu hao duy trì luyện chế các bậc đan phẩm cấp cao.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <span>2. Bốn Cảnh Giới Hồn Lực Luyện Dược</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                • <strong class="text-gray-300">Phàm Cảnh</strong>: Luyện chế Đan Dược Nhất Phẩm đến Tam Phẩm.<br>
+                                • <strong class="text-cyan-300">Linh Cảnh</strong>: Đan Dược Tứ Phẩm đến Lục Phẩm. Đan dược bắt đầu có linh khí sơ bộ.<br>
+                                • <strong class="text-purple-300">Thiên Cảnh</strong>: Đan Dược Thất Phẩm đến Bát Phẩm. Dẫn động Đan Lôi thiên kiếp.<br>
+                                • <strong class="text-amber-400">Đế Cảnh</strong>: Luyện chế Cửu Phẩm Kim Đan & Huyền Đan hóa hình nhân thế gian.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-3 p-4 rounded-xl bg-black/40 border border-green-500/30">
-                        <i class="fa-solid fa-circle-check text-green-400 text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="font-bold text-white">Môi trường Java Runtime</h4>
-                            <p class="text-xs text-gray-400 mt-1">Yêu cầu <strong>Java 21 trở lên</strong> (hỗ trợ đầy đủ các tính năng Java hiện đại).</p>
+
+                    <!-- Dược Đỉnh & Dị Hỏa -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                        <!-- 5 Cấp Dược Đỉnh -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-cauldron"></i>
+                                <span>3. Năm Cấp Dược Đỉnh & Nguy Cơ Nổ Lò</span>
+                            </h5>
+                            <div class="text-xs text-gray-300 space-y-1.5">
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-gray-300">1. Hắc Thiết Đỉnh</span>
+                                    <span class="text-gray-400">Phẩm 1-2 • Nguy cơ nổ lò: 30%</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-cyan-300">2. Thanh Đồng Đỉnh</span>
+                                    <span class="text-cyan-400">Phẩm 3-4 • Nguy cơ nổ lò: 20%</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-blue-300">3. Huyền Băng Đỉnh</span>
+                                    <span class="text-blue-400">Phẩm 5-6 • Nguy cơ nổ lò: 10%</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-rose-300">4. Xích Long Đỉnh</span>
+                                    <span class="text-rose-400">Phẩm 7-8 • Nguy cơ nổ lò: 5%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-amber-300">5. Bát Quái Cửu Long Đỉnh</span>
+                                    <span class="text-amber-400 font-bold">Phẩm 9+ • Chống nổ lò 100%</span>
+                                </div>
+                            </div>
+                            <p class="text-[11px] text-rose-400/90 pt-1">
+                                ⚠️ <em>Cảnh báo</em>: Khi nhiệt độ lò vượt ngưỡng đỏ trong giao diện luyện đan, Dược Đỉnh sẽ nổ tung, phá hủy hoàn toàn dược thảo đang luyện!
+                            </p>
+                        </div>
+
+                        <!-- 6 Loại Hỏa Diễm / Dị Hỏa -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-rose-400 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>4. Sáu Loại Hỏa Diễm & Dị Hỏa Đấu Phá</span>
+                            </h5>
+                            <div class="text-xs text-gray-300 space-y-1.5">
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-gray-300">Phàm Hỏa (Đan Lửa thường)</span>
+                                    <span class="text-gray-400">Nhiệt độ cơ bản, luyện phẩm 1-2</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-amber-400">Thú Hỏa (Tử Hỏa Sư Vương)</span>
+                                    <span class="text-amber-400">+25% tốc độ tinh luyện dược chất</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-cyan-300">Cốt Nhiễm Lãnh Hỏa (#11)</span>
+                                    <span class="text-cyan-400">Băng hỏa kết hợp, tăng 30% độ thuần khiết</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-emerald-400">Thanh Liên Địa Tâm Hỏa (#19)</span>
+                                    <span class="text-emerald-400">Sinh ra trong lòng dung nham, giảm 50% thời gian</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-1">
+                                    <span class="font-semibold text-purple-400">Vạn Thú Linh Hỏa (#22)</span>
+                                    <span class="text-purple-400">Tăng tỷ lệ ngưng đan thành công +20%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-indigo-400">Tam Thiên Diễm Viêm Hỏa (#9)</span>
+                                    <span class="text-indigo-400 font-bold">Lửa bất tử tinh tú, tự hồi phục dược đỉnh</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-3 p-4 rounded-xl bg-black/40 border border-blue-500/30">
-                        <i class="fa-solid fa-circle-info text-blue-400 text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="font-bold text-white">PlaceholderAPI (Khuyên Dùng Chuẩn TAB)</h4>
-                            <p class="text-xs text-gray-400 mt-1">Sử dụng biến <code class="text-cyan-400">%tutien_linhcan%</code> để hiển thị linh căn và cảnh giới trên Tablist/Scoreboard mà không bao giờ bị tràn màn hình.</p>
+
+                    <!-- Quy Trình 5 Bước Luyện Đan Thực Chiến Trong GUI -->
+                    <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-3">
+                        <h4 class="text-sm font-bold text-amber-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-list-ol"></i>
+                            <span>5. Quy Trình 5 Bước Luyện Đan Thực Chiến Trong Giao Diện GUI (/tt ld)</span>
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-5 gap-2.5 text-xs">
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-bold text-[10px]">BƯỚC 1</span>
+                                    <div class="font-bold text-white mt-1.5">Nhập Liệu</div>
+                                    <p class="text-[11px] text-gray-400 mt-1">Đặt Dược Đỉnh tại chỗ (<code>/tt ld hd</code>), nạp nguyên liệu đúng theo Đan Phương yêu cầu.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold text-[10px]">BƯỚC 2</span>
+                                    <div class="font-bold text-white mt-1.5">Ôn Đỉnh</div>
+                                    <p class="text-[11px] text-gray-400 mt-1">Bơm Hỏa Diễm làm nóng lò đến nhiệt độ tối ưu (vùng vạch xanh lá trên thanh đo).</p>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-bold text-[10px]">BƯỚC 3</span>
+                                    <div class="font-bold text-white mt-1.5">Luyện Hóa</div>
+                                    <p class="text-[11px] text-gray-400 mt-1">Vận dụng Thần Thức chiết xuất tinh chất thảo dược, loại bỏ cặn bã ô tạp.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 font-bold text-[10px]">BƯỚC 4</span>
+                                    <div class="font-bold text-white mt-1.5">Ngưng Đan</div>
+                                    <p class="text-[11px] text-gray-400 mt-1">Hội tụ dược dịch kết tinh thành đan hoàn, giữ vững nhiệt độ chống nổ lò.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold text-[10px]">BƯỚC 5</span>
+                                    <div class="font-bold text-white mt-1.5">Xuất Đan & Đan Lôi</div>
+                                    <p class="text-[11px] text-gray-400 mt-1">Thu hồi đan phẩm. Với đan dược từ Phẩm 5 trở lên, phải đỡ Đan Lôi để đan thành công!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-3 p-4 rounded-xl bg-black/40 border border-purple-500/30">
-                        <i class="fa-solid fa-coins text-purple-400 text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="font-bold text-white">Vault + EssentialsX / CMI (Tùy chọn)</h4>
-                            <p class="text-xs text-gray-400 mt-1">Hỗ trợ giao dịch kinh tế tiền tệ tại Cửa Hàng Vạn Giới Các và các hoạt động tông môn.</p>
+                </div>
+
+                <!-- PHẦN V: HỆ THỐNG BỔ TRỢ & GAMEPLAY NÂNG CAO -->
+                <div class="space-y-4 pt-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                        <i class="fa-solid fa-cubes-stacked text-emerald-400"></i>
+                        <span>Phần V. Hệ Thống Bổ Trợ & Gameplay Nâng Cao</span>
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Khí Đạo Rèn -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-cyan-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-hammer"></i>
+                                <span>1. Khí Đạo & Rèn Trang Bị 5 Phẩm Cấp</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Sử dụng Đe Rèn Tu Tiên kết hợp khoáng thạch đào từ máy tạo đá để tôi rèn thần binh 5 bậc: <strong>Phàm &rarr; Linh &rarr; Huyền &rarr; Địa &rarr; Thiên Khí</strong>. Trang bị có thể khảm nạm Linh Thạch gia tăng xuyên thấu, hút máu và kháng sát thương.
+                            </p>
+                        </div>
+
+                        <!-- Tông Môn & Tàng Kinh Các -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-synagogue"></i>
+                                <span>2. Tông Môn Đỉnh Cấp & Tàng Kinh Các</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Chi phí thành lập tông môn: <strong>500,000 Linh Thạch</strong> (<code>/tt create &lt;tên&gt;</code>). Tông môn sở hữu <strong>Tàng Kinh Các</strong> cho phép đệ tử đóng góp bí tịch tàn quyển và mượn đọc công pháp theo cấp bậc cống hiến.
+                            </p>
+                        </div>
+
+                        <!-- Bế Quan Mật Thất -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-purple-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-door-closed"></i>
+                                <span>3. Bế Quan Mật Thất Tăng Tốc Tu Vi</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Xây dựng phòng kín kết hợp trụ đá tụ linh (<code>/tt dd</code>). Khi bế quan trong mật thất, tốc độ tích lũy tu vi được cộng thêm <strong>+150% đến +300%</strong> và hoàn toàn an toàn trước quái vật cũng như người chơi khác.
+                            </p>
+                        </div>
+
+                        <!-- Đan Độc & Kháng Thuốc -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-rose-400 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-skull-crossbones"></i>
+                                <span>4. Hệ Thống Đan Độc (0 - 1000) & Kháng Thuốc</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                Uống đan dược liên tục sẽ tích lũy Đan Độc. Khi vượt quá <strong>800 điểm</strong>, tu sĩ sẽ rơi vào trạng thái trúng độc, giảm 50% hiệu suất tu vi và mất máu định kỳ. Cần dùng <em>Thanh Tâm Đan</em> hoặc thi triển giải độc qua <code>/tt tl</code> để thanh lọc kinh mạch.
+                            </p>
+                        </div>
+
+                        <!-- Ngự Không & Ngự Kiếm -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-blue-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-wind"></i>
+                                <span>5. Ngự Không Đạp Mây & Ngự Kiếm Phi Hành</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                • <strong>Ngự Kiếm Phi Hành</strong> (<code>/tt sword</code>, Trúc Cơ+): Lướt gió với tốc độ cao, hiệu ứng kiếm khí bao bọc và tự động ban hiệu ứng Rơi Chậm (Slow Falling 10s) chống rớt vực Void.<br>
+                                • <strong>Ngự Không Đạp Mây</strong> (<code>/tt nk</code>, Kim Đan+): Bay tự do trên không trung, tiêu hao 5 điểm linh lực mỗi giây.
+                            </p>
+                        </div>
+
+                        <!-- Vạn Giới Các & Gacha -->
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <h5 class="text-xs font-bold text-yellow-300 uppercase tracking-wider flex items-center space-x-2">
+                                <i class="fa-solid fa-coins"></i>
+                                <span>6. Vạn Giới Các Chợ Giao Dịch & Gacha Vận Mệnh</span>
+                            </h5>
+                            <p class="text-xs text-gray-300 leading-relaxed">
+                                • <strong>Vạn Giới Các</strong> (<code>/tt market</code>): Sàn giao dịch thảo dược, đan dược, bí tịch tự do giữa người chơi bằng Linh Thạch.<br>
+                                • <strong>Vòng Quay Tầm Bảo</strong> (<code>/tt spin</code>): Sử dụng Vé Thiên Mệnh quay thưởng tìm kiếm Dị Hỏa, Bí Tịch Tiên Giai và Dược Đỉnh quý hiếm với cơ chế bảo hiểm Pity 90 lần quay chắc chắn trúng đồ Cam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHẦN VI: DANH MỤC VẬT PHẨM & THẢO DƯỢC TIÊU BIỂU -->
+                <div class="space-y-4 pt-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                        <i class="fa-solid fa-mortar-pestle text-amber-400"></i>
+                        <span>Phần VI. Danh Mục Đan Dược & Thảo Dược Tiêu Biểu</span>
+                    </h2>
+
+                    <!-- Bảng Đan Dược -->
+                    <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-cyan-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-capsules"></i>
+                            <span>1. Mười Hai Đan Dược Tiêu Biểu Trong Plugin</span>
+                        </h4>
+                        <div class="overflow-x-auto rounded-xl border border-white/10">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10">
+                                    <tr>
+                                        <th class="p-3">Tên Đan Dược</th>
+                                        <th class="p-3">Phẩm Cấp</th>
+                                        <th class="p-3">Công Dụng & Hiệu Quả</th>
+                                        <th class="p-3">Đan Độc</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30">
+                                    <tr>
+                                        <td class="p-3 font-semibold text-white">Tụ Khí Đan</td>
+                                        <td class="p-3 text-gray-300">Nhất Phẩm</td>
+                                        <td class="p-3">Tăng 200 điểm tu vi lập tức cho cảnh giới Luyện Khí.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-cyan-300">Trúc Cơ Đan</td>
+                                        <td class="p-3 text-cyan-300">Nhị Phẩm</td>
+                                        <td class="p-3">Tăng 100% tỷ lệ đột phá Trúc Cơ thành công, bảo vệ kinh mạch không vỡ.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-cyan-300">Tẩy Tủy Đan</td>
+                                        <td class="p-3 text-cyan-300">Tam Phẩm</td>
+                                        <td class="p-3">Tẩy trừ kinh mạch, có 25% cơ hội nâng cấp bậc Linh Căn lên 1 bậc cao hơn.</td>
+                                        <td class="p-3 text-emerald-400 font-mono">0 (Thanh Lọc)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-purple-300">Hóa Cốt Đan</td>
+                                        <td class="p-3 text-purple-300">Tứ Phẩm</td>
+                                        <td class="p-3">Tôi luyện xương cốt, tăng vĩnh viễn +50 HP tối đa.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-purple-300">Hóa Anh Đan</td>
+                                        <td class="p-3 text-purple-300">Ngũ Phẩm</td>
+                                        <td class="p-3">Đột phá Nguyên Anh, giảm 50% sát thương đòn Lôi Kiếp thứ 4.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+70</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-amber-300">Phá Cảnh Đan</td>
+                                        <td class="p-3 text-amber-300">Lục Phẩm</td>
+                                        <td class="p-3">Cưỡng ép vượt qua bình cảnh bất kỳ cảnh giới dưới Hóa Thần.</td>
+                                        <td class="p-3 text-rose-400 font-mono">+120</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-emerald-300">Thanh Tâm Đan</td>
+                                        <td class="p-3 text-emerald-300">Lục Phẩm</td>
+                                        <td class="p-3">Hóa giải lập tức 400 điểm Đan Độc trong kinh mạch.</td>
+                                        <td class="p-3 text-emerald-400 font-mono">-400 (Giải Độc)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-rose-400">Cửu Chuyển Hoàn Hồn Đan</td>
+                                        <td class="p-3 text-rose-400">Thất Phẩm</td>
+                                        <td class="p-3">Hồi sinh tại chỗ không rơi mất trang bị khi bị tử vong trong 10 phút.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+90</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-blue-300">Ngũ Hành Hộ Thể Đan</td>
+                                        <td class="p-3 text-blue-300">Thất Phẩm</td>
+                                        <td class="p-3">Miễn nhiễm toàn bộ hiệu ứng thiêu đốt, đông cứng, sấm giật trong 5 phút.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+80</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-indigo-300">Vạn Lôi Tiêu Diêu Đan</td>
+                                        <td class="p-3 text-indigo-300">Bát Phẩm</td>
+                                        <td class="p-3">Hấp thu 80% uy lực Thiên Kiếp Lôi Đình chuyển hóa thành 100,000 Tu Vi.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+150</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-yellow-300">Bồ Đề Tâm Đan</td>
+                                        <td class="p-3 text-yellow-300">Bát Phẩm</td>
+                                        <td class="p-3">Gia tăng cảnh giới Hồn Lực trực tiếp lên Thiên Cảnh.</td>
+                                        <td class="p-3 text-amber-400 font-mono">+100</td>
+                                    </tr>
+                                    <tr class="bg-amber-500/5">
+                                        <td class="p-3 font-black text-amber-400">Đế Phẩm Đan Dược</td>
+                                        <td class="p-3 text-amber-400 font-bold">Cửu Phẩm Hóa Hình</td>
+                                        <td class="p-3">Thần dược truyền thuyết, phi thăng thẳng tiến Không Huyền / Đạp Thiên!</td>
+                                        <td class="p-3 text-emerald-400 font-mono">0 (Thuần Khiết)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Bảng Thảo Dược -->
+                    <div class="space-y-2 pt-2">
+                        <h4 class="text-sm font-bold text-emerald-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>2. Danh Mục Thảo Dược Quý Cấp 1 Đến Cấp 6</span>
+                        </h4>
+                        <div class="overflow-x-auto rounded-xl border border-white/10">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10">
+                                    <tr>
+                                        <th class="p-3">Tên Thảo Dược</th>
+                                        <th class="p-3">Cấp Bậc</th>
+                                        <th class="p-3">Khu Vực Phân Bố</th>
+                                        <th class="p-3">Dùng Trong Đan Phương</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30">
+                                    <tr>
+                                        <td class="p-3 font-semibold text-white">Ngưng Huyết Thảo</td>
+                                        <td class="p-3 text-gray-300">Cấp 1</td>
+                                        <td class="p-3">Đồng bằng, đồi cỏ thế giới thường</td>
+                                        <td class="p-3">Tụ Khí Đan, Hồi Huyết Đan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-cyan-300">Hoạt Huyết Chi</td>
+                                        <td class="p-3 text-cyan-300">Cấp 2</td>
+                                        <td class="p-3">Rừng rậm nguyên sinh, hang đá ẩm ướt</td>
+                                        <td class="p-3">Trúc Cơ Đan, Tẩy Tủy Đan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-cyan-300">Linh Vân Diệp</td>
+                                        <td class="p-3 text-cyan-300">Cấp 3</td>
+                                        <td class="p-3">Đỉnh núi tuyết cao ngút ngàn</td>
+                                        <td class="p-3">Hóa Cốt Đan, Băng Tâm Đan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-purple-300">Cửu Diệp Chi Lăng</td>
+                                        <td class="p-3 text-purple-300">Cấp 4</td>
+                                        <td class="p-3">Đảo bay bí cảnh, rương kho báu</td>
+                                        <td class="p-3">Hóa Anh Đan, Phá Cảnh Đan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-rose-400">U Hồn Hoa</td>
+                                        <td class="p-3 text-rose-400">Cấp 5</td>
+                                        <td class="p-3">Vùng đất Nether Soul Sand Valley</td>
+                                        <td class="p-3">Thanh Tâm Đan, Cửu Chuyển Hoàn Hồn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-amber-300">Thiên Linh Quả</td>
+                                        <td class="p-3 text-amber-300">Cấp 6</td>
+                                        <td class="p-3">The End, Rương Boss Thế Giới</td>
+                                        <td class="p-3">Vạn Lôi Tiêu Diêu Đan, Ngũ Hành Hộ Thể</td>
+                                    </tr>
+                                    <tr class="bg-amber-500/5">
+                                        <td class="p-3 font-bold text-amber-400">Bồ Đề Hóa Thể Diệp</td>
+                                        <td class="p-3 text-amber-400 font-bold">Thần Cấp</td>
+                                        <td class="p-3">Rơi từ Thần Thú Cổ Đại Bí Cảnh</td>
+                                        <td class="p-3">Bồ Đề Tâm Đan, Đế Phẩm Đan Dược</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHẦN VII: BẢNG TRA CỨU TOÀN BỘ CÂU LỆNH & QUYỀN HẠN -->
+                <div class="space-y-4 pt-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                        <i class="fa-solid fa-terminal text-cyan-400"></i>
+                        <span>Phần VII. Bảng Tra Cứu Toàn Bộ Lệnh & Quyền Hạn In-Game</span>
+                    </h2>
+
+                    <!-- Bảng 19 Lệnh Người Chơi -->
+                    <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-cyan-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-user"></i>
+                            <span>1. Mười Chín Lệnh Người Chơi (Player Commands)</span>
+                        </h4>
+                        <div class="overflow-x-auto rounded-xl border border-white/10">
+                            <table class="w-full text-left text-xs font-mono">
+                                <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10 font-sans">
+                                    <tr>
+                                        <th class="p-3">Lệnh Thực Thi</th>
+                                        <th class="p-3">Lệnh Rút Gọn</th>
+                                        <th class="p-3">Mô Tả Chức Năng</th>
+                                        <th class="p-3">Yêu Cầu / Cảnh Giới</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30">
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien</td>
+                                        <td class="p-3 text-amber-400">/tt</td>
+                                        <td class="p-3 font-sans">Mở Giao diện Tu Tiên Trung Tâm (Main GUI).</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien congphap</td>
+                                        <td class="p-3 text-amber-400">/tt cp</td>
+                                        <td class="p-3 font-sans">Mở Tàng Kinh Các xem 22 bộ công pháp & tàn quyển.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien congphap huongdan</td>
+                                        <td class="p-3 text-amber-400">/tt cp hd</td>
+                                        <td class="p-3 font-sans">Mở Cẩm Nang Công Pháp & Thần Thông toàn tập.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien thamngo</td>
+                                        <td class="p-3 text-amber-400">/tt tn</td>
+                                        <td class="p-3 font-sans">Mở giao diện tọa thiền tham ngộ khẩu quyết công pháp.</td>
+                                        <td class="p-3 font-sans text-cyan-300">Đã có công pháp chủ tu</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien skill &lt;id&gt;</td>
+                                        <td class="p-3 text-amber-400">/tt skill</td>
+                                        <td class="p-3 font-sans">Thi triển thần thông võ kỹ công pháp tương ứng.</td>
+                                        <td class="p-3 font-sans text-cyan-300">Đã lĩnh ngộ tầng yêu cầu</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien luyendan</td>
+                                        <td class="p-3 text-amber-400">/tt ld</td>
+                                        <td class="p-3 font-sans">Mở Đan Phòng Luyện Dược Sư Đấu Phá Thương Khung.</td>
+                                        <td class="p-3 font-sans text-rose-300">Mở nghề Luyện Dược Sư</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien luyendan huongdan</td>
+                                        <td class="p-3 text-amber-400">/tt ld hd</td>
+                                        <td class="p-3 font-sans">Mở Cẩm Nang Luyện Dược Sư in-game chi tiết.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien tuluyen</td>
+                                        <td class="p-3 text-amber-400">/tt tl</td>
+                                        <td class="p-3 font-sans">Bắt đầu ngồi thiền AFK tích lũy tu vi tại chỗ.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien dokiep</td>
+                                        <td class="p-3 text-amber-400">/tt dk</td>
+                                        <td class="p-3 font-sans">Tiến hành độ kiếp / đột phá cảnh giới tiếp theo.</td>
+                                        <td class="p-3 font-sans text-amber-300">Tu vi đạt mốc tối đa</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien ngukhong</td>
+                                        <td class="p-3 text-amber-400">/tt nk</td>
+                                        <td class="p-3 font-sans">Bật / tắt chế độ ngự không bay lượn tự do (5 mana/s).</td>
+                                        <td class="p-3 font-sans text-amber-400">Kim Đan trở lên</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien ngukiem</td>
+                                        <td class="p-3 text-amber-400">/tt sword</td>
+                                        <td class="p-3 font-sans">Bật / tắt chế độ ngự kiếm phi hành tốc độ cao.</td>
+                                        <td class="p-3 font-sans text-cyan-300">Trúc Cơ trở lên</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien dandoc</td>
+                                        <td class="p-3 text-amber-400">/tt dd</td>
+                                        <td class="p-3 font-sans">Kiểm tra trạng thái đan độc và kháng thuốc hiện tại.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien tuido</td>
+                                        <td class="p-3 text-amber-400">/tt bag</td>
+                                        <td class="p-3 font-sans">Mở Túi Trữ Vật Càn Khôn Đại chứa đồ tu tiên.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien xephang</td>
+                                        <td class="p-3 text-amber-400">/tt top</td>
+                                        <td class="p-3 font-sans">Xem Bảng Xếp Hạng Tu Vi, Cảnh Giới, Lực Chiến server.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien vangioi</td>
+                                        <td class="p-3 text-amber-400">/tt market</td>
+                                        <td class="p-3 font-sans">Mở Chợ Giao Dịch Vạn Giới Các liên server.</td>
+                                        <td class="p-3 font-sans text-gray-400">Tất cả người chơi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien gacha</td>
+                                        <td class="p-3 text-amber-400">/tt spin</td>
+                                        <td class="p-3 font-sans">Mở vòng quay Vận Mệnh Luân Hồi Tầm Bảo.</td>
+                                        <td class="p-3 font-sans text-yellow-300">Có Vé Thiên Mệnh</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien tongmon</td>
+                                        <td class="p-3 text-amber-400">/tt tm</td>
+                                        <td class="p-3 font-sans">Mở bảng điều khiển Tông Môn của bản thân.</td>
+                                        <td class="p-3 font-sans text-cyan-300">Đã gia nhập tông môn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien laptong &lt;tên&gt;</td>
+                                        <td class="p-3 text-amber-400">/tt create</td>
+                                        <td class="p-3 font-sans">Sáng lập Tông Môn mới (Phí: 500,000 Linh Thạch).</td>
+                                        <td class="p-3 font-sans text-amber-400">Kim Đan trở lên</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-cyan-400">/tutien bicanh</td>
+                                        <td class="p-3 text-amber-400">/tt dungeon</td>
+                                        <td class="p-3 font-sans">Mở danh sách Bí Cảnh phụ bản săn quái rơi tàn quyển.</td>
+                                        <td class="p-3 font-sans text-purple-300">Theo cấp cảnh giới</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Bảng 8 Lệnh Admin -->
+                    <div class="space-y-2 pt-2">
+                        <h4 class="text-sm font-bold text-rose-400 flex items-center space-x-2">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <span>2. Tám Lệnh Quản Trị Viên (Admin Commands - Quyền <code>tutien.admin</code>)</span>
+                        </h4>
+                        <div class="overflow-x-auto rounded-xl border border-white/10">
+                            <table class="w-full text-left text-xs font-mono">
+                                <thead class="bg-white/5 text-gray-300 font-bold border-b border-white/10 font-sans">
+                                    <tr>
+                                        <th class="p-3">Lệnh Admin</th>
+                                        <th class="p-3">Quyền Hạn (Permission)</th>
+                                        <th class="p-3">Mô Tả & Tác Dụng Thực Thi</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-white/5 text-gray-300 bg-black/30">
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien givebitich &lt;player&gt; &lt;id&gt; [ch]</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Trao Bí Tịch Tàn Quyển công pháp chỉ định cho người chơi.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien givepill &lt;player&gt; &lt;id&gt; [sl]</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Trao Đan dược tu tiên với số lượng tùy chọn.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien admin tuvi &lt;player&gt; &lt;add/set&gt; &lt;n&gt;</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Cộng hoặc đặt trực tiếp điểm Tu Vi của người chơi.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien admin linhluc &lt;player&gt; &lt;n&gt;</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Hồi phục hoặc đặt điểm Linh Lực (Mana).</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien admin canhgioi &lt;player&gt; &lt;tên&gt;</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Đặt cảnh giới trực tiếp (VD: HOA_THAN, TRUC_CO, DAP_THIEN).</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien admin linhcan &lt;player&gt; &lt;hệ&gt;</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Gán Linh Căn bẩm sinh (VD: HOA, MOC, LOI, HON_DON).</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien boss spawn &lt;boss_id&gt;</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Triệu hồi Boss Thế Giới hoặc Boss Bí Cảnh tại vị trí đứng.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-rose-400">/tutien reload</td>
+                                        <td class="p-3 text-amber-400 font-sans">tutien.admin</td>
+                                        <td class="p-3 font-sans">Nạp lại toàn bộ cấu hình YAML của plugin (Zero downtime).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHẦN VIII: GỢI Ý & ĐỊNH HƯỚNG NÂNG CẤP TIẾP THEO -->
+                <div class="space-y-4 pt-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                        <i class="fa-solid fa-compass-drafting text-purple-400"></i>
+                        <span>Phần VIII. Gợi Ý & Định Hướng Nâng Cấp Hệ Thống Tiếp Theo</span>
+                    </h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1.5">
+                            <div class="font-bold text-cyan-300 flex items-center space-x-2">
+                                <i class="fa-solid fa-dungeon"></i>
+                                <span>1. Mở Rộng Hệ Thống Bí Cảnh Dungeons (MythicMobs)</span>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                Phân tầng phụ bản Bí Cảnh theo từng cấp cảnh giới (Dược Thảo Bí Cảnh cho Luyện Khí; Ma Sát Bí Cảnh cho Trúc Cơ; Cổ Thần Mộ cho Nguyên Anh &rarr; Hóa Thần). Drop table tàn quyển Thiên/Tiên Giai cân bằng từ 1% - 5%.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1.5">
+                            <div class="font-bold text-rose-400 flex items-center space-x-2">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                                <span>2. Hệ Thống Dị Hỏa Tranh Đoạt (World Event)</span>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                Sự kiện Dị Hỏa Xuất Thế định kỳ mỗi cuối tuần. Triệu hồi Dị Hỏa Linh Thú ở Nether/Thế giới Tu Tiên. Tu sĩ hoặc Tông môn hạ gục nhận được Ngọn Lửa Dị Hỏa để dung hợp vào Phần Quyết.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1.5">
+                            <div class="font-bold text-amber-300 flex items-center space-x-2">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>3. Song Tu & Đạo Lữ (Couples Cultivation)</span>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                Cho phép 2 tu sĩ kết duyên Đạo Lữ. Khi cùng ngồi thiền cạnh nhau trong động phủ hoặc mật thất, tốc độ tu vi được cộng dồn thêm <strong>+30%</strong> và mở khóa kỹ năng bảo mệnh cho nhau.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-1.5">
+                            <div class="font-bold text-emerald-300 flex items-center space-x-2">
+                                <i class="fa-solid fa-egg"></i>
+                                <span>4. Thần Thú / Linh Sủng Đồng Hành</span>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                Thu thập trứng yêu thú hiếm trong Bí Cảnh, ấp nở và nuôi dưỡng Thần Thú (Thao Thiết, Kỳ Lân, Kim Sí Đại Bàng) cùng chiến đấu và cưỡi ngự phi hành.
+                            </p>
                         </div>
                     </div>
                 </div>
             `;
 
-            // Updates for TuTienPlugin (Cập nhật v2.3 Changelog)
-            document.getElementById('tab-content-updates').innerHTML = `
+            // Dependencies Content for TuTienPlugin (Cập nhật chuẩn báo cáo v2.3.0)
+            document.getElementById('tab-content-dependencies').innerHTML = `
                 <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
-                    <i class="fa-solid fa-code-compare text-amber-400"></i>
-                    <span>Nhật Ký Bản Phát Hành TuTienPlugin</span>
+                    <i class="fa-solid fa-cubes text-cyan-400"></i>
+                    <span>Hệ Thống Phụ Thuộc & Yêu Cầu Cài Đặt (v2.3.0)</span>
                 </h2>
                 <div class="space-y-4">
-                    <!-- Version 2.3 -->
-                    <div class="p-5 rounded-xl bg-black/40 border border-amber-500/40 space-y-3">
+                    <div class="p-4 rounded-xl bg-black/40 border border-cyan-500/20 space-y-2">
+                        <h4 class="text-sm font-bold text-cyan-300 flex items-center space-x-2">
+                            <i class="fa-solid fa-server"></i>
+                            <span>Nền Tảng Máy Chủ Yêu Cầu</span>
+                        </h4>
+                        <p class="text-xs text-gray-300 leading-relaxed">
+                            Khuyến nghị sử dụng <strong>PaperMC</strong>, <strong>PurpurMC</strong> hoặc <strong>Folia</strong> phiên bản <strong>1.20.6 - 1.21.x</strong> (Java 21). Plugin hỗ trợ kiến trúc luồng hiện đại và multi-threading của Folia.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-white text-sm">MythicMobs v5.6+</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300">Bắt buộc cho Thần Thông</span>
+                            </div>
+                            <p class="text-xs text-gray-400">
+                                Động cơ cốt lõi điều khiển 22 bộ công pháp và hiệu ứng kỹ năng chiến đấu trong tệp <code>TuTienSkills.yml</code>.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-white text-sm">SuperiorSkyblock2 / BentoBox</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-cyan-500/20 text-cyan-300">Tương thích Skyblock</span>
+                            </div>
+                            <p class="text-xs text-gray-400">
+                                Đồng bộ quyền hạn đảo bay, ngăn chặn thiên lôi phá vỡ khối và bảo vệ quyền sở hữu mật thất bế quan.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-white text-sm">PlaceholderAPI (PAPI)</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300">Hiển thị TAB & Scoreboard</span>
+                            </div>
+                            <p class="text-xs text-gray-400">
+                                Cung cấp hơn 18 biến placeholder như <code>%tutien_canhgioi%</code>, <code>%tutien_tuvi%</code>, <code>%tutien_dandoc%</code>.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-white text-sm">Vault & Economy Provider</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-500/20 text-purple-300">Kinh tế & Tông môn</span>
+                            </div>
+                            <p class="text-xs text-gray-400">
+                                Tích hợp thanh toán phí sáng lập tông môn (500k), giao dịch Vạn Giới Các và mua bán đan dược.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Updates Content for TuTienPlugin (Cập nhật chuẩn báo cáo v2.3.0)
+            document.getElementById('tab-content-updates').innerHTML = `
+                <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
+                    <i class="fa-solid fa-clock-rotate-left text-amber-400"></i>
+                    <span>Nhật Ký Cập Nhật Phiên Bản</span>
+                </h2>
+                <div class="space-y-4">
+                    <!-- Version 2.3.0 -->
+                    <div class="p-5 rounded-xl bg-black/40 border border-amber-500/30 space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="font-bold text-amber-400 text-base flex items-center space-x-2">
-                                <span class="bg-amber-500/20 px-2 py-0.5 rounded text-xs border border-amber-400/40">Mới Nhất</span>
-                                <span>Bản nâng cấp v2.3 — Skyblock & Survival Edition</span>
-                            </span>
-                            <span class="text-xs text-gray-400">Tháng 11, 2026</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="font-bold text-amber-300 text-sm">Bản v2.3.0 Skyblock Edition (Zero-Loss Architecture)</span>
+                                <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-extrabold uppercase">Mới nhất</span>
+                            </div>
+                            <span class="text-xs text-gray-500">Tháng 11, 2026</span>
                         </div>
                         <ul class="list-disc list-inside text-xs text-gray-300 space-y-1.5">
-                            <li><strong>Chuẩn hóa 17 Cảnh Giới Tiên Nghịch:</strong> Phàm Nhân ➔ Luyện Khí ➔ Trúc Cơ ➔ Kim Đan ➔ Nguyên Anh ➔ Hóa Thần ➔ Anh Biến ➔ Vấn Đỉnh ➔ Âm Hư ➔ Dương Thực ➔ Khuy Niết ➔ Tịnh Niết ➔ Toái Niết ➔ Không Niết ➔ Không Linh ➔ Không Huyền ➔ Đạp Thiên.</li>
-                            <li><strong>Cơ chế Tịch Cốc Đạo Thể:</strong> Kim Đan giảm 85% đói (≥ 18/20); Nguyên Anh trở lên khóa đầy 20/20 vĩnh viễn không mất độ đói.</li>
-                            <li><strong>Bách Độc Bất Xâm:</strong> Hóa giải từ 30% đến 100% debuff xấu (Âm Hư ➔ Đạp Thiên miễn nhiễm 100% mọi hiệu ứng tiêu cực).</li>
-                            <li><strong>Tọa Thiền Tụ Linh Trận Bát Quái:</strong> Hiệu ứng vòng xoay cổ ngữ Bát Quái, luồng Linh Khí Helix xoắn ốc cuộn từ đất lên đỉnh đầu, Tử Khí Đông Lai và chuông tiên ngân nga.</li>
-                            <li><strong>Ngự Không Đạp Mây Tường Vân:</strong> Đám mây tiên bồng bềnh dưới 2 bàn chân, Phong Độn Trận 4 cực, phân cấp mây theo cảnh giới và Slow Falling 10s khi hết mana chống rơi Void.</li>
-                            <li><strong>Tối ưu PlaceholderAPI Chống Tràn TAB:</strong> Tách riêng %tutien_linhcan% (~15 ký tự) siêu gọn gàng cho TAB list và Scoreboard.</li>
-                            <li>Cân bằng chỉ số toàn diện: Giáp bẩm sinh (+0 ➔ +70), Tốc độ (0.200 ➔ 0.400), Kháng lùi (0% ➔ 100%) và Giảm sát thương nhận (0% ➔ 50%).</li>
+                            <li><strong>Tứ Đại Kỳ Thư</strong>: Bổ sung trọn bộ 22 bộ công pháp huyền thoại (Phàm Nhân, Tru Tiên, Tiên Nghịch, Đấu Phá) với cơ chế 1 Chủ Tu + 3 Phụ Tu.</li>
+                            <li><strong>Đấu Phá Luyện Đan (BTTH Alchemy)</strong>: Tích hợp 4 chỉ số hồn lực, 5 cấp Dược Đỉnh chống nổ lò, 6 loại Hỏa diễm / Dị Hỏa và Đan Lôi thiên kiếp.</li>
+                            <li><strong>Hệ Thống Đan Độc</strong>: Thước đo 0-1000 hạn chế spam đan dược và bổ sung Thanh Tâm Đan thanh lọc kinh mạch.</li>
+                            <li><strong>Tàng Kinh Các Tông Môn</strong>: Cho phép đệ tử quyên góp tàn quyển và mượn đọc bí tịch công pháp theo điểm cống hiến.</li>
+                            <li><strong>Zero-Loss Crash-Proof</strong>: Lưu trữ dữ liệu thẻ PDC NBT & tự động sao lưu SQLite/MySQL Async mỗi 30s chống mất dữ liệu khi server crash.</li>
                         </ul>
                     </div>
 
-                    <!-- Version 2.2 -->
+                    <!-- Version 2.2.0 -->
                     <div class="p-5 rounded-xl bg-black/40 border border-white/10 space-y-3 opacity-80">
                         <div class="flex items-center justify-between">
-                            <span class="font-bold text-gray-300 text-sm">Bản v2.2 Skyblock Edition</span>
+                            <span class="font-bold text-gray-300 text-sm">Bản v2.2.0 Skyblock Edition</span>
                             <span class="text-xs text-gray-500">Tháng 10, 2026</span>
                         </div>
                         <ul class="list-disc list-inside text-xs text-gray-400 space-y-1">
-                            <li>Sấm sét Thiên Kiếp chuyển sang strikeLightningEffect: an toàn cho đảo gỗ, không biến dân làng, không phá block.</li>
-                            <li>Ngự Kiếm Hộ Phong ban hiệu ứng Rơi Chậm (Slow Falling 10s) chống rơi xuống vực Void.</li>
-                            <li>Phân trang Bát Quái Đan Lò hỗ trợ 50+ loại đan dược và tự động luyện đan khi tọa thiền.</li>
+                            <li>Sấm sét Thiên Kiếp chuyển sang <code>strikeLightningEffect</code>: an toàn tuyệt đối cho đảo gỗ Skyblock, không phá vỡ khối, không biến villager.</li>
+                            <li>Ngự Kiếm Hộ Phong ban hiệu ứng Rơi Chậm (Slow Falling 10s) chống rơi xuống vực hư không Void.</li>
                             <li>Tích hợp đào đá tại Cobblestone Generator nhận trực tiếp khoáng thạch, tu vi và đạo niệm.</li>
                         </ul>
                     </div>
                 </div>
             `;
 
-            // Reviews for TuTienPlugin (Cập nhật v2.3)
+            // Reviews for TuTienPlugin (Cập nhật v2.3.0)
             document.getElementById('tab-content-reviews').innerHTML = `
                 <h2 class="text-xl md:text-2xl font-bold text-white flex items-center space-x-3 pb-3 border-b border-white/10">
                     <i class="fa-solid fa-star text-amber-400"></i>
-                    <span>Đánh Giá Từ Cộng Đồng (5.0 / 5.0)</span>
+                    <span>Đánh Giá Từ Cộng Đồng & Quản Trị Viên (5.0 / 5.0)</span>
                 </h2>
                 <div class="space-y-4">
                     <div class="p-4 rounded-xl bg-black/40 border border-white/10 space-y-2">
@@ -1369,14 +2271,14 @@
                                     TN
                                 </div>
                                 <span class="font-bold text-white text-xs">Tài Dev Nguyễn</span>
-                                <span class="text-[10px] text-gray-500">• Tác giả</span>
+                                <span class="text-[10px] text-gray-500">• Tác giả Core</span>
                             </div>
                             <div class="flex text-amber-400 text-xs">
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             </div>
                         </div>
                         <p class="text-xs text-gray-300 leading-relaxed">
-                            Bản v2.3 Skyblock & Survival Edition chuẩn hóa 17 Cảnh Giới Tiên Nghịch, bổ sung Tịch Cốc Đạo Thể và tối ưu bảng TAB chuẩn mực, mang lại trải nghiệm tu tiên đỉnh cao và mượt mà nhất cho mọi máy chủ!
+                            Bản v2.3.0 Zero-Loss Architecture hoàn thiện xuất sắc toàn bộ hệ thống Đấu Phá Luyện Đan và Tứ Đại Kỳ Thư. Các máy chủ Skyblock và Survival vận hành cực kỳ ổn định, không lo cháy đảo hay roll-back dữ liệu!
                         </p>
                     </div>
                 </div>
